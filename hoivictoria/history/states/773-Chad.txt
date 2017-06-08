@@ -1,0 +1,17 @@
+state={
+	id=773
+	name="STATE_773"
+	provinces={
+		1473 1883 1993 2081 3123 3181 4897 4902 4978 5136 8078 9152 10893 7919 1974 
+	}
+	history={
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

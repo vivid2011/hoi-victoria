@@ -1,0 +1,21 @@
+state=
+{
+	id=163
+	name="STATE_163"
+	manpower = 9000
+	
+	state_category = enclave
+	
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 2
+			3943 = {
+				naval_base = 1
+			}
+		}
+	} 
+	provinces={	
+		3943 
+	}
+}

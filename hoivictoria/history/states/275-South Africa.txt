@@ -1,0 +1,32 @@
+
+state={
+	id=275
+	name="STATE_275" # Transvaal
+	manpower = 1760272
+	
+	state_category = large_town
+	
+	resources={
+		steel=8
+		chromium=80
+	}
+
+	history={
+		owner = TVL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		
+		victory_points = {
+			10400 10
+		}
+		
+		add_core_of = TVL
+	}
+
+	provinces={
+		1688 2171 2213 5106 5217 10400 10566 
+	}
+}

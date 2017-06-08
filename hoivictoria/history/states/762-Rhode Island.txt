@@ -1,0 +1,19 @@
+state={
+	id=762
+	name="STATE_762"
+	provinces={
+		11830 
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = USA
+
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

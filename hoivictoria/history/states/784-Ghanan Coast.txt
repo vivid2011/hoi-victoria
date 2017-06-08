@@ -1,0 +1,28 @@
+state={
+	id=784
+	name="STATE_784"
+	
+	state_category = town
+
+	history={
+		owner = ENG
+		victory_points = {
+			10862 1 
+		}
+		buildings = {
+			infrastructure = 2
+			10862 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		10862 12742
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,20 @@
+
+state={
+	id=549
+	name="STATE_549"
+
+	history={
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1914 1960 2016 4918 5060 8052 8084 10739 10795 10827 12887 
+	}
+	manpower=3000000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

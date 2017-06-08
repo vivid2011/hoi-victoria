@@ -1,0 +1,39 @@
+
+state={
+	id=115
+	name="STATE_115"
+	manpower = 2836571
+	
+	state_category = city
+	history={
+		owner = KTS
+		victory_points = {
+			10074 20 
+		}
+		victory_points = {
+			4159 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			10074 = {
+				naval_base = 2
+			}
+			7059 = {
+				naval_base = 3
+			}
+			4159 = {
+				naval_base = 4
+			}
+			4014 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = KTS
+	}
+
+	provinces={
+		1009 1156 3857 4014 4159 7059 7147 10074 12047 
+	}
+}

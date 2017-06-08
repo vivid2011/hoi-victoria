@@ -1,0 +1,29 @@
+state={
+	id=760
+	name="STATE_760"
+	provinces={
+		715 718 905 908 3710 3906 6732 
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 3
+			6732 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = USA
+		victory_points = {
+			6732 20 
+		}
+
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

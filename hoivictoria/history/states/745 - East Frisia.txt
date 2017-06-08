@@ -1,0 +1,19 @@
+state={
+	id=745
+	name="STATE_745"
+	manpower = 358467
+	
+	state_category = city
+
+	history={
+		owner = HAN
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = HAN
+	}
+
+	provinces={
+		9281 11264 11360  
+	}
+}

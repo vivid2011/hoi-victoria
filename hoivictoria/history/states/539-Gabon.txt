@@ -1,0 +1,19 @@
+
+state={
+	id=539
+	name="STATE_539"
+
+	history={
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		8207 10948 
+	}
+	manpower=64000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

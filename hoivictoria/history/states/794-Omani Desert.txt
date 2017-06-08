@@ -1,0 +1,23 @@
+
+state={
+	id=794
+	name="STATE_794"
+	manpower = 69000
+	
+	state_category = rural
+	
+	resources={
+		oil=1
+	}
+
+	history={
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = OMA
+	}
+
+	provinces={
+		8002 2103 2059 2018 5049 
+	}
+}

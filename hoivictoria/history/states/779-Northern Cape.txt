@@ -1,0 +1,17 @@
+
+state={
+	id=779
+	name="STATE_779" # Cape
+	manpower = 10000
+
+	state_category = rural
+
+	history={
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		1509 5203 10668 
+	}
+}

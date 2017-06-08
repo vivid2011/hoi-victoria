@@ -1,0 +1,24 @@
+
+state={
+	id=292
+	name="STATE_292"
+	manpower = 140000
+	
+	state_category = rural
+	resources={
+		oil=2
+	}
+
+	history={
+		buildings = {
+			infrastructure = 0
+		}
+		victory_points = {
+			12727 5
+		}
+	}
+
+	provinces={
+		 2057 4968 4974 5024 5027 5058 5093 5099 7970 7995 8004 8060 8101 10815 10850 10892 10901 10923 12455 12727 12749 12813 12870 2027 
+	}
+}

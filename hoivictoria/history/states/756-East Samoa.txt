@@ -1,0 +1,23 @@
+state={
+	id=756
+	name="STATE_756"
+	state_category = small_island
+	history = {
+		owner = USA
+		
+		buildings = {
+			infrastructure = 2
+			13080 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SAM
+		
+	}
+	
+	provinces={
+		13080 
+	}
+	manpower=61607
+	buildings_max_level_factor=1.000
+}

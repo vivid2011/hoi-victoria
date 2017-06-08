@@ -1,0 +1,26 @@
+
+state={
+	id=795
+	name="STATE_795"
+	manpower = 140000
+	
+	state_category = rural
+	resources={
+		oil=1
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 1
+			12702 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		 1955 12702 10791 
+	}
+}

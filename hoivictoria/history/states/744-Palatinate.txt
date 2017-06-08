@@ -1,0 +1,28 @@
+
+state={
+	id=744
+	name="STATE_744"
+	manpower = 1027739
+	resources={
+		steel=50
+		aluminium=12
+	}
+	
+	state_category = city
+
+	history={
+		owner = BAV
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = BAV
+	}
+
+	provinces={
+		563 3558 11547 
+	}
+	
+	
+}

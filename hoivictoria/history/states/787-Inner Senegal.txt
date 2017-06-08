@@ -1,0 +1,21 @@
+
+state={
+	id=787
+	name="STATE_787"
+	manpower = 138000
+	resources={
+		steel=2
+	}
+	
+	state_category = pastoral
+
+	history={
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		2100 8015 12710  
+	}
+}

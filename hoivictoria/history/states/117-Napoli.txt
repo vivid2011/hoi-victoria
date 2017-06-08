@@ -1,0 +1,32 @@
+
+state={
+	id=117
+	name="STATE_117" # Campania
+	manpower = 4333611
+	
+	state_category = city
+	resources={
+		aluminium=16
+		steel = 24
+	}
+
+	history={
+		owner = KTS
+		victory_points = {
+			819 20 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			819 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = KTS
+	}
+
+	provinces={
+		819 851 883 955 963 3923 3966 3958 3968 6831 6843 6939 6972 6980 9826 11803 
+	}
+}

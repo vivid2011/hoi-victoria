@@ -1,0 +1,17 @@
+state={
+	id=775
+	name="STATE_775"
+	provinces={
+		5013 5070 8065 8122 
+	}
+	history={
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

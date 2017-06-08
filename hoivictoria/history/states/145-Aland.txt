@@ -1,0 +1,24 @@
+state=
+{
+	id=145
+	name="STATE_145"
+	manpower = 17400
+	
+	state_category = small_island
+	
+	history=
+	{
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+			9228 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SOV
+	}
+	
+	provinces=	{
+		9228
+	}
+}

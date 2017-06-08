@@ -1,0 +1,21 @@
+
+state={
+	id=746
+	name="STATE_746"
+	manpower = 454700
+	
+	state_category = large_city
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = AUS
+	}
+
+	provinces={
+		614 3614 6643 11787 
+	}
+}

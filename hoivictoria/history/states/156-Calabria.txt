@@ -1,0 +1,29 @@
+
+state={
+	id=156
+	name="STATE_156"
+	manpower = 1966315
+	
+	state_category = city
+	history={
+		owner = KTS
+		victory_points = {
+			11837 15 
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 2
+			11837 = {
+				naval_base = 7
+			}
+			11998 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = KTS
+	}
+
+	provinces={
+		3901 6979 9784 9856 9990 10027 11837 11998 12066 12098 
+	}
+}

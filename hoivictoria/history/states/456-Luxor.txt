@@ -1,0 +1,21 @@
+state=
+{
+	id=456
+	name="STATE_456" # Aswan
+	manpower = 3224516
+	
+	state_category = town
+	
+	history = {
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+		}
+
+		add_core_of = TUR
+
+	}
+	provinces={
+		1028 1064 1151 1206 7030 7073 7144 10028 10097 10844 11974 11999 12044 12071 12771 
+	}
+}

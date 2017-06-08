@@ -1,0 +1,81 @@
+﻿capital = 461
+
+oob = "MOR_1860"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+
+	parties = {
+		neutrality = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+
+		democratic = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 0
+		}
+		
+		monarchist = {
+			popularity = 85
+		}
+	}
+	
+	ruling_party = monarchist
+	last_election = "1800.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_national_unity = 0.70
+
+create_country_leader = {
+	name = "King Mohammed IV"
+	desc = ""
+	picture = "gfx/leaders/MOR/Mohammed4.dds"
+	expire = "1873.10.18"
+	ideology = imperial
+	traits = {
+		#
+	}
+}
+
+add_namespace = {
+	name = "ger_unit_leader"
+	type = unit_leader
+}
+
+#create_field_marshal = {
+#	name = "Gerd von Rundstedt"
+#	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
+#	traits = { defensive_doctrine offensive_doctrine }
+#	skill = 3
+#	id = 1
+#}
+
+#create_corps_commander = {
+#	name = "Friedrich Paulus"
+#	picture = "Portrait_Germany_Friedrich_Paulus.dds"
+#	traits = {  }
+#	skill = 1
+#	id = 3
+#}
+
+#create_navy_leader = {
+#	name = "Karl Dönitz"
+#	picture = "Portrait_Germany_Karl_Donitz.dds"
+#	traits = { seawolf }
+#	skill = 5
+#	id = 26
+#}

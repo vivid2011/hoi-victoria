@@ -1,0 +1,26 @@
+state=
+{
+	id=164
+	name="STATE_164"
+	manpower = 90000
+	
+	state_category = small_island
+	
+	history=
+	{
+		owner = TUR
+		victory_points = {
+			10007 1 
+		}
+		buildings = {
+			infrastructure = 2
+			10007 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = TUR
+	}
+	provinces=
+	{
+7003 10007 	}
+}

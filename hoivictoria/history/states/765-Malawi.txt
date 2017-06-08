@@ -1,0 +1,21 @@
+state={
+	id=765
+	name="STATE_765"
+	resources={
+		chromium=20.000
+		tungsten=3.000
+	}
+	history={
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+	provinces={
+		12908 12986 2255 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,20 @@
+state={
+	id=81
+	name="STATE_81"
+	manpower=919300
+	
+	
+	state_category = rural
+	
+	history={
+		owner = WAL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = WAL
+	}
+	provinces={
+		637 3630 3645 6652 6667 11588 11605 11657 
+	}
+}

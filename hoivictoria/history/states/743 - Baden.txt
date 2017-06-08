@@ -1,0 +1,24 @@
+state={
+	id=743
+	name="STATE_743" #Baden
+	resources={
+		aluminium=5.000
+	}
+
+	state_category = city
+	history={
+		owner = BAD
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = BAD
+	}
+
+	provinces={
+		3530 3679 3692 6542 6568 6712 11640 
+	}
+	manpower=2086854
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=751
+	name="STATE_751"
+	manpower = 330900
+	
+	state_category = town
+	
+	resources={
+		chromium=10
+		steel = 10
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+			9805 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GRE
+	}
+
+	provinces={
+		841 863 3914 3864 3973 3980 6930 9837 9916 9805 11786 
+	}
+}

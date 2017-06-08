@@ -1,0 +1,20 @@
+
+state={
+	id=556
+	name="STATE_556"
+
+	history={
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		2012 2044 4927 5045 7930 7954 8116 10788 10812 10829 10915 12751 12794 12838 5101 2068 10868 10725 1115 
+	}
+	manpower=4000000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

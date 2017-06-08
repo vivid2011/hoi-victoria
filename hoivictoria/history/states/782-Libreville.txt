@@ -1,0 +1,28 @@
+
+state={
+	id=782
+	name="STATE_782"
+
+	history={
+		owner = FRA
+		victory_points = {
+			5139 1 
+		}
+		buildings = {
+			infrastructure = 2
+			5139 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		5139
+	}
+	manpower=364000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

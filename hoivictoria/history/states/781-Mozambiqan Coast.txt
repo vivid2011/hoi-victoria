@@ -1,0 +1,29 @@
+
+state={
+	id=781
+	name="STATE_781" #Mozambique
+	manpower = 3125000
+	
+	state_category = rural
+	
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			8245 = {
+				naval_base = 1
+			}
+			2123 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8245 1 
+		}
+	}
+
+	provinces={
+		8245 5212 2193 12935 2120 12971 5164 2123 2202 
+	}
+}

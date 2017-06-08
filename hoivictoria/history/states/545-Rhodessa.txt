@@ -1,0 +1,27 @@
+
+state={
+	id=545
+	name="STATE_545"
+	resources={
+		chromium=23.000
+		tungsten=10.000
+	}
+
+	history={
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			10929 1 
+		}
+
+	}
+
+	provinces={
+		1874 2151 2216 4851 7842 10929
+	}
+	manpower=2155400
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

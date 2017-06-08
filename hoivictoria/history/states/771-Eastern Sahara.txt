@@ -1,0 +1,17 @@
+state={
+	id=771
+	name="STATE_771"
+	provinces={
+		4138 4961 7987 8103 10900 12836 
+	}
+	history={
+		buildings = {
+			infrastructure = 0
+
+		}
+
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=272
+	name="STATE_272"
+	manpower = 638000
+	resources={
+		steel=2
+	}
+	
+	state_category = pastoral
+
+	history={
+		owner = FRA
+		victory_points = {
+			4948 5 
+		}
+		buildings = {
+			infrastructure = 2
+			4948 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		4948 7972 12834 
+	}
+}

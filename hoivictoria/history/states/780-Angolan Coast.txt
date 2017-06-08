@@ -1,0 +1,25 @@
+
+state={
+	id=780
+	name="STATE_780"
+	manpower = 2225000
+	
+	state_category = rural
+
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 2
+			8248 ={
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8248 1
+		}
+	}
+
+	provinces={
+		5158 8219 8248 12958 12985 
+	}
+}

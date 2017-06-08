@@ -1,0 +1,27 @@
+
+state={
+	id=747
+	name="STATE_747" #
+	manpower = 405500
+	
+	state_category = rural
+	
+	resources={
+		chromium=18
+		aluminium=56
+	}
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = AUS
+		add_core_of = MNT
+	}
+
+	provinces={
+		9809 9821 
+	}
+}

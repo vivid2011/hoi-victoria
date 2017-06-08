@@ -1,0 +1,28 @@
+
+state={
+	id=793
+	name="STATE_793"
+	manpower = 591505
+
+	state_category = pastoral
+
+	history={
+		owner = ENG
+		victory_points = {
+			5074 1 
+		}
+		buildings = {
+			infrastructure = 2
+			5074 = {
+				naval_base = 1
+			}
+			8000 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		5074 8000 
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=783
+	name="STATE_783"
+	manpower = 9757000
+	
+	state_category = large_town
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			2050 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			2050 1
+		}
+
+	}
+
+	provinces={
+		2050 
+	}
+}

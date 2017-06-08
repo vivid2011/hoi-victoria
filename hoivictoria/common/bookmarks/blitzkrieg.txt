@@ -1,0 +1,103 @@
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 1860.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "PRS"
+	
+		FRA = {
+			history = FRA_BLITZKRIEG_DESC
+			ideology = monarchist
+			ideas={
+				
+			}
+			focuses = {
+			
+			}
+		}
+		USA = {
+			history = USA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		ENG = {
+			history = ENG_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+			
+		}
+		PRS = {
+			history = GER_BLITZKRIEG_DESC
+			ideology = monarchist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		SDP = {
+			history = ITA_BLITZKRIEG_DESC
+			ideology = monarchist
+			ideas={
+				
+			}
+			focuses = {
+				
+			}			
+		}
+		JAP = {
+			history = JAP_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas={
+				
+			}	
+			focuses = {
+				
+			}		
+		}
+		SOV = {
+			history = SOV_BLITZKRIEG_DESC
+			ideology = monarchist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+		# minors from DLC #
+		"RAJ"={
+			minor = yes
+			history = "RAJ_BLITZKRIEG_DESC"
+			ideology = monarchist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
