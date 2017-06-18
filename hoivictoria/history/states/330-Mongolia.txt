@@ -2,7 +2,7 @@
 state={
 	id=330
 	name="STATE_330"
-	manpower = 772000
+	manpower = 372000
 	resources={
 		steel=2
 
@@ -13,7 +13,7 @@ state={
 	state_category = town
 
 	history={
-		owner = MON
+		owner = CHI
 		victory_points = {
 			4801 5
 		}
@@ -21,12 +21,11 @@ state={
 			7799 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
+			industrial_complex = 1
 		}
-		add_core_of = MON
+		add_core_of = CHI
 	}
 
 	provinces={

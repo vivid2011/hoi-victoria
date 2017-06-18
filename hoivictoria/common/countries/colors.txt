@@ -612,3 +612,28 @@ TVL = {
 	color = rgb { 255 212 128 }
 	color_ui = rgb { 255 255 255 }
 }
+
+BAL = {
+	color = rgb { 153 204 0 }
+	color_ui = rgb { 255 255 255 }
+}
+
+ACH = {
+	color = rgb { 204 255 51 }
+	color_ui = rgb { 255 255 255 }
+}
+
+HAW = {
+	color = rgb { 255 71 26 }
+	color_ui = rgb { 255 255 255 }
+}
+
+NVS = {
+	color = rgb { 255 224 102 }
+	color_ui = rgb { 255 255 255 }
+}
+
+NBW = {
+	color = rgb { 102 153 0 }
+	color_ui = rgb { 255 255 255 }
+}

@@ -4,18 +4,13 @@ state={
 	name="STATE_726"
 
 	history={
-		owner = GER
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			7290 = {
 				naval_base = 1
 
 			}
 
-		}
-		add_core_of = SAM
-		1919.6.28 = {
-			owner = ENG
 		}
 
 	}
@@ -23,7 +18,7 @@ state={
 	provinces={
 		7290 
 	}
-	manpower=61607
+	manpower=51607
 	buildings_max_level_factor=1.000
 	state_category=small_island
 }

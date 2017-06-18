@@ -1,75 +1,24 @@
 ﻿capital = 302
 
-oob = "BOL_1936"
+oob = "BOL_1860"
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_support = 1		
-	tech_engineers = 1
 	gw_artillery = 1
-	early_fighter = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
 }
+
+set_research_slots = 3
+set_convoys = 200
+set_national_unity = 0.7
 set_country_flag = monroe_doctrine
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "BOL_1939"
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
 
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 80
 		}
 
 		fascism = {
@@ -77,77 +26,58 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 0
+			popularity = 20
 		}
 		
-		neutrality = { 
-			popularity = 100
+		monarchist = {
+			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1934.11.11"
-	election_frequency = 72
+	ruling_party = democratic
+	last_election = "1800.1.1"
+	election_frequency = 48
 	elections_allowed = yes
+
+}
+
+add_ideas = {
+
 }
 
 create_country_leader = {
-	name = "José Luis Tejada Sorzano"
-	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
-	picture = "Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
-	expire = "1965.1.1"
-	ideology = despotism # liberalism, personally, but puppet for military
-	traits = {
-		#
-	}
+	name = "President José María Linares"
+	desc = ""
+	picture = "gfx/leaders/BOL/Linares.dds"
+	expire = "1861.10.23"
+	ideology = liberalism
 }
 
-create_country_leader = {
-	name = "Óscar Únzaga de la Vega"
-	desc = "POLITICS_OSCAR_UNZAGA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = falangism
-	traits = {
-		#
-	}
+add_namespace = {
+	name = "ger_unit_leader"
+	type = unit_leader
 }
 
-1939.1.1 = {
-	set_politics = {
+#create_field_marshal = {
+#	name = "Gerd von Rundstedt"
+#	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
+#	traits = { defensive_doctrine offensive_doctrine }
+#	skill = 3
+#	id = 1
+#}
 
-		parties = {
-		democratic = { 
-			popularity = 0
-		}
+#create_corps_commander = {
+#	name = "Friedrich Paulus"
+#	picture = "Portrait_Germany_Friedrich_Paulus.dds"
+#	traits = {  }
+#	skill = 1
+#	id = 3
+#}
 
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-	
-	ruling_party = neutrality
-		last_election = "1934.11.11"
-		election_frequency = 72
-		elections_allowed = yes
-	}
-
-	create_country_leader = {
-		name = "Carlos Quintanilla"
-		desc = "POLITICS_CARLOS_QUINTANILLA_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = oligarchism
-		traits = {
-			#
-		}
-	}
-}
+#create_navy_leader = {
+#	name = "Karl Dönitz"
+#	picture = "Portrait_Germany_Karl_Donitz.dds"
+#	traits = { seawolf }
+#	skill = 5
+#	id = 26
+#}capital = 301

@@ -1,0 +1,26 @@
+
+state={
+	id=799
+	name="STATE_799" # Antofagasta
+	manpower = 10000
+	
+	state_category = rural
+
+	history={
+		owner = PRU
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			5228 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = PRU
+		
+
+	}
+
+	provinces={
+		5131
+	}
+}

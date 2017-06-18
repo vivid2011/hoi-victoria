@@ -2,27 +2,20 @@
 state={
 	id=285
 	name="STATE_285"
-	manpower = 2563100
+	manpower = 1363100
 	state_category = large_city
 	
 	history={
-		owner = AST
+		owner = ENG
 		buildings = {
-			infrastructure = 6
-			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 2
-			air_base = 5
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
 			12406 = {
-				naval_base = 6
-				coastal_bunker = 2
+				naval_base = 3
 			}
-			7859 = {
-				bunker = 1
-			}
-			7520 = {
-				coastal_bunker = 1
-			}
+			
 		}
 		victory_points = {
 			7859 30 
@@ -35,7 +28,6 @@ state={
 		victory_points = {
 			7520 1 
 		}
-		add_core_of = AST
 	}
 
 	provinces={

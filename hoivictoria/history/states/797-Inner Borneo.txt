@@ -1,0 +1,26 @@
+state= {
+	id=797
+	name="STATE_797"
+	manpower = 68600
+	resources={
+		rubber=100
+		oil=6
+	}
+	
+	state_category = rural
+
+	history= {
+		add_claim_by = INS
+		
+
+		buildings = {
+			infrastructure = 1
+			10325 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		12243 7415 1404 10325 7231 1252 10181 2047 4236 4323 7299 5226 7424 2170 2222 1230 4335 7355 5176 
+	}
+}

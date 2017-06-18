@@ -2,17 +2,16 @@
 state={
 	id=445
 	name="STATE_445" # Quetta
-	manpower = 405100
+	manpower = 305100
 	
 	state_category = wasteland
 
 	history={
-		owner = RAJ
+		owner = AFG
 		buildings = {
-			infrastructure = 3
-			air_base = 4
+			infrastructure = 2
 		}
-		add_core_of = PAK
+		add_core_of = AFG
 	}
 
 	provinces={

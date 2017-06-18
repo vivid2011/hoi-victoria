@@ -1,200 +1,87 @@
-﻿capital = 277
+﻿capital = 476
 
-oob = "MEX_1936"
+oob = "MEX_1860"
 
-# Starting tech
+set_research_slots = 3
+
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
-	early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
 }
+
 set_country_flag = monroe_doctrine
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "MEX_1939"
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-}
-
-
-set_convoys = 45
 
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 5
+		neutrality = { 
+			popularity = 0
 		}
 
 		fascism = {
 			popularity = 0
 		}
-		
-		communism = {
-			popularity = 1
+
+		democratic = {
+			popularity = 65
 		}
 		
-		neutrality = { 
-			popularity = 94
+		communism = {
+			popularity = 0
+		}
+		
+		monarchist = {
+			popularity = 35
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1934.7.1"
-	election_frequency = 72
+	ruling_party = democratic
+	last_election = "1800.1.1"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
-set_national_unity = 0.8
+set_national_unity = 0.70
 
 create_country_leader = {
-	name = "Lázaro Cárdenas"
-	desc = "POLITICS_LAZARO_CARDENAS_DESC"
-	picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Salvador Abascal"
-	desc = "POLITICS_SALVADOR_ABASCAL_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = falangism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Manuel Gómez Morín"
-	desc = "POLITICS_MANUEL_GOMEZ_MORIN_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-	expire = "1965.1.1"
+	name = "President Benito Juárez"
+	desc = ""
+	picture = "gfx/leaders/MEX/Juarez.dds"
+	expire = "1872.7.18"
 	ideology = conservatism
 	traits = {
 		#
 	}
 }
 
-create_country_leader = {
-	name = "Dionisio Encina"
-	desc = "POLITICS_DIONISIO_ENCINA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
+add_namespace = {
+	name = "ger_unit_leader"
+	type = unit_leader
 }
 
-1939.1.1 = {
-	set_politics = {
+#create_field_marshal = {
+#	name = "Gerd von Rundstedt"
+#	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
+#	traits = { defensive_doctrine offensive_doctrine }
+#	skill = 3
+#	id = 1
+#}
 
-		parties = {
-		democratic = { 
-			popularity = 1
-		}
+#create_corps_commander = {
+#	name = "Friedrich Paulus"
+#	picture = "Portrait_Germany_Friedrich_Paulus.dds"
+#	traits = {  }
+#	skill = 1
+#	id = 3
+#}
 
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 1
-		}
-		
-		neutrality = { 
-			popularity = 98
-		}
-	}
-	
-	ruling_party = neutrality
-		last_election = "1934.7.1"
-		election_frequency = 72
-		elections_allowed = yes
-	}
-
-	create_country_leader = { #from 1940, but he's prettier so he gets to win early
-		name = "Manuel Avila Camacho"
-		desc = "POLITICS_LAZARO_CARDENAS_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
-	}
-}
-
-create_corps_commander = {
-	name = "Luis Farell"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	traits = { }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Gildardo Magaña"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-	traits = { desert_fox }
-	skill = 3
-}
-
-create_navy_leader = {
-	name = "Paul Suarez"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
-	traits = { superior_tactician }
-	skill = 3
-}
+#create_navy_leader = {
+#	name = "Karl Dönitz"
+#	picture = "Portrait_Germany_Karl_Donitz.dds"
+#	traits = { seawolf }
+#	skill = 5
+#	id = 26
+#}

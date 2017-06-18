@@ -2,20 +2,19 @@
 state={
 	id=609
 	name="STATE_609" # East Hebei
-	manpower = 6400000
+	manpower = 3500000
 	
 	state_category = town
 
 	history={
-		owner = JAP
+		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 1
 			3900 = {
-				naval_base = 2
+				naval_base = 1
 			}
 		}
 

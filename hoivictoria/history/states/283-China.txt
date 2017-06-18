@@ -14,22 +14,17 @@ state={
 	}
 
 	history={
-		owner = XSM
-		add_core_of = XSM
+		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 
 		victory_points = {
 			2045 1 
 		}
 
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 
-		1938.10.25 = {
-			owner = CHI
-		}
 	}
 
 	provinces={

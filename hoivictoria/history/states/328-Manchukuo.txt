@@ -2,17 +2,15 @@
 state={
 	id=328
 	name="STATE_328" # Kirin
-	manpower = 7536266
+	manpower = 4536266
 	
 	state_category = rural
 
 	history={
-		owner = MAN
+		owner = CHI
 		add_core_of = CHI
-		add_core_of = MAN
-		add_core_of = PRC
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 		}
 		victory_points = {
 			4572 1

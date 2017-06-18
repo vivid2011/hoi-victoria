@@ -1,7 +1,7 @@
 state= {
 	id=315
 	name="STATE_315"
-	manpower = 3607919
+	manpower = 2607919
 	resources={
 		steel=4
 		chromium=160
@@ -10,20 +10,18 @@ state= {
 	state_category = town
 
 	history= {
-		owner = CUB
+		owner = SPR
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
+			industrial_complex = 1
 			7622 = {
-				naval_base = 3
+				naval_base = 1
 			}
 			1550 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = CUB
 		victory_points = {
 			7622 5 
 		}

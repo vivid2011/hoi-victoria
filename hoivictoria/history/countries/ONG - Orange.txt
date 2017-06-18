@@ -8,6 +8,10 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+create_faction = Boers
+add_to_faction = ONG
+add_to_faction = TVL
+
 set_politics = {
 
 	parties = {

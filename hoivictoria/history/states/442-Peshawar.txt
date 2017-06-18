@@ -2,17 +2,16 @@
 state={
 	id=442
 	name="STATE_442"
-	manpower = 4684400
+	manpower = 3184400
 	
 	state_category = rural
 
 	history={
-		owner = RAJ
+		owner = AFG
 		buildings = {
-			infrastructure = 3
-			air_base = 3
+			infrastructure = 2
 		}
-		add_core_of = PAK
+		add_core_of = AFG
 	}
 
 	provinces={

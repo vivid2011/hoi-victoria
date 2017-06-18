@@ -2,21 +2,15 @@
 state={
 	id=616
 	name="STATE_616" # Ningxia
-	manpower = 4077600
+	manpower = 3077600
 
 	state_category = pastoral
 
 	history={
-		owner = XSM
-		add_core_of = XSM
+		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		buildings = {
-			infrastructure = 2
-		}
-
-		1938.10.25 = {
-			owner = CHI
+			infrastructure = 1
 		}
 	}
 

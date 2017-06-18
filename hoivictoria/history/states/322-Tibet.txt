@@ -2,7 +2,7 @@
 state={
 	id=322
 	name="STATE_322"
-	manpower = 3722000
+	manpower = 1722000
 	
 	state_category = town
 	
@@ -12,16 +12,16 @@ state={
 	}
 
 	history={
-		owner = TIB
+		owner = CHI
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 1
 		}
 		victory_points = {
 			5033 5 
 		}
-		add_core_of = TIB
+		add_core_of = CHI
 	}
 
 	provinces={

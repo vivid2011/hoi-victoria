@@ -1,4 +1,4 @@
-﻿name="Hearts of Darkness - The Victorian Era"
+name="Hearts of Darkness: The Victorian Era"
 path="mod/hoivictoria/"
 tags={
 	"Gameplay"
@@ -6,4 +6,6 @@ tags={
 	"Map"
 	"Ideologies"
 }
-supported_version="1.3.3"
+picture="hodlogo.jpg"
+remote_file_id="949314211"
+supported_version="1.4.0"

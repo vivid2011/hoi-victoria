@@ -16,8 +16,13 @@ if = {
 		target = WAL
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = ACH
+		autonomous_state = autonomy_colony
+	}
 	else = {
 		puppet = WAL
+		puppet = ACH
 	}
 }
 

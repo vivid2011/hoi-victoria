@@ -2,15 +2,13 @@
 state={
 	id=287
 	name="STATE_287" # Taklamakan
-	manpower = 478000
+	manpower = 178000
 	
 	state_category = wasteland
 
 	history={
-		owner = SIK
-		add_core_of = SIK
+		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 

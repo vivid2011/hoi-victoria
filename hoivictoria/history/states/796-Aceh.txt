@@ -1,0 +1,32 @@
+state={
+	id=796
+	name="STATE_796"
+	manpower = 2254900
+	
+	state_category = town
+	
+	resources={
+		rubber=68
+		oil=4
+	}
+
+
+	history=
+	{
+		owner = ACH
+		add_core_of = ACH
+		add_claim_by = INS
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			7658 = {
+				naval_base = 1
+			}
+		}
+		
+	}
+	provinces={
+		7658  12488 10509 
+	}
+}
