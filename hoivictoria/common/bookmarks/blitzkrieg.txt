@@ -1,13 +1,13 @@
 bookmarks = {
 	bookmark = {
-		name = "BLITZKRIEG_NAME"
-		desc = "BLITZKRIEG_DESC"
+		name = "FIRST_NAME"
+		desc = "FIRST_DESC"
 		date = 1860.1.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "PRS"
 	
 		FRA = {
-			history = FRA_BLITZKRIEG_DESC
+			history = FRA_FIRST_DESC
 			ideology = monarchist
 			ideas={
 				
@@ -17,7 +17,7 @@ bookmarks = {
 			}
 		}
 		USA = {
-			history = USA_BLITZKRIEG_DESC
+			history = USA_FIRST_DESC
 			ideology = democratic
 			ideas = {
 				
@@ -27,7 +27,7 @@ bookmarks = {
 			}
 		}
 		ENG = {
-			history = ENG_BLITZKRIEG_DESC
+			history = ENG_FIRST_DESC
 			ideology = democratic
 			ideas = {
 				
@@ -38,7 +38,7 @@ bookmarks = {
 			
 		}
 		PRS = {
-			history = GER_BLITZKRIEG_DESC
+			history = PRS_FIRST_DESC
 			ideology = monarchist
 			ideas = {
 				
@@ -48,7 +48,7 @@ bookmarks = {
 			}
 		}
 		TUR = {
-			history = TUR_BLITZKRIEG_DESC
+			history = TUR_FIRST_DESC
 			ideology = monarchist
 			ideas={
 				
@@ -58,7 +58,7 @@ bookmarks = {
 			}		
 		}
 		SOV = {
-			history = SOV_BLITZKRIEG_DESC
+			history = SOV_FIRST_DESC
 			ideology = monarchist
 			ideas = {
 				
@@ -68,7 +68,7 @@ bookmarks = {
 			}
 		}
 		AUS = {
-			history = AUS_BLITZKRIEG_DESC
+			history = AUS_FIRST_DESC
 			ideology = monarchist
 			ideas = {
 				
@@ -79,13 +79,13 @@ bookmarks = {
 		}
 
 		"---"={
-			history = "OTHER_BLITZKRIEG_DESC"
+			history = "OTHER_FIRST_DESC"
 		}
 
 		# minors from DLC #
 		"RAJ"={
 			minor = yes
-			history = "RAJ_BLITZKRIEG_DESC"
+			history = "RAJ_FIRST_DESC"
 			ideology = monarchist
 			ideas = {
 				

@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = CHI
+		owner = KOR
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -20,7 +20,8 @@ state={
 			4052 1
 		}	
 
-		add_core_of = CHI
+		add_core_of = KOR
+		add_claim_by = CHI
 	}
 
 	provinces={

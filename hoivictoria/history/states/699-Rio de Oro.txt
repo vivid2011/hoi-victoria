@@ -6,6 +6,9 @@ state={
 	state_category = wasteland
 
 	history={
+		owner = MOR
+		add_core_of = MOR
+		add_claim_by = SPR
 		buildings = {
 			infrastructure = 1
 			8038 = {

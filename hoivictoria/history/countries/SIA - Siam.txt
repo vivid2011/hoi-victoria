@@ -8,19 +8,6 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = LAO
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = LAO
-	}
-}
-
 set_politics = {
 
 	parties = {

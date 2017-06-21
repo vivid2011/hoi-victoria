@@ -2,15 +2,15 @@
 state={
 	id=640
 	name="STATE_640" # Mandalay
-	manpower = 3944600
+	manpower = 2044600
 	
 	state_category = town
 
 	history={
-		owner = RAJ
+		owner = BUR
+		add_core_of = BUR
 		buildings = {
-			infrastructure = 3
-			air_base = 1
+			infrastructure = 2
 		}
 		victory_points = {
 			1492 1 

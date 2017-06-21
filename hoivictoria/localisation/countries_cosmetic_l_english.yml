@@ -241,3 +241,6 @@
  USA_33_democratic:0 "United States"
  USA_33_democratic_DEF:0 "The United States of America"
  USA_33_democratic_ADJ:0 "American"
+ KOR_JOS_monarchist:0 "Kingdom of Joseon"
+ KOR_JOS_monarchist_DEF:0 "The Kingdom of Joseon"
+ KOR_JOS_monarchist_ADJ:0 "Korean"

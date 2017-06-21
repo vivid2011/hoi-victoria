@@ -6,7 +6,7 @@ state={
 	state_category = city
 	
 	history={
-		owner = SOV
+		owner = AUS
 		victory_points = {
 			11479 5 
 		}
@@ -14,7 +14,7 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = SOV
+		add_core_of = AUS
 	}
 
 	provinces={

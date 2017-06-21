@@ -637,3 +637,13 @@ NBW = {
 	color = rgb { 102 153 0 }
 	color_ui = rgb { 255 255 255 }
 }
+
+TRK = {
+	color = rgb { 255 153 0 }
+	color_ui = rgb { 255 255 255 }
+}
+
+BUR = {
+	color = rgb { 204 255 51 }
+	color_ui = rgb { 255 255 255 }
+}
