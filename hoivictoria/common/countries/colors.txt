@@ -379,7 +379,7 @@ AZR = {
 }
 
 GEO = {
-	color = rgb { 255  150  150 }
+	color = rgb { 255 140 26 }
 	color_ui = rgb { 255  204  204 }
 }
 
@@ -645,5 +645,38 @@ TRK = {
 
 BUR = {
 	color = rgb { 204 255 51 }
+	color_ui = rgb { 255 255 255 }
+}
+
+CSA = {
+	color = rgb { 102 153 153 }
+	color_ui = rgb { 255 255 255 }
+}
+SSC = {
+	color = rgb { 0 204 0 }
+	color_ui = rgb { 255 255 255 }
+}
+MIS = {
+	color = rgb { 153 102 0 }
+	color_ui = rgb { 255 255 255 }
+}
+FLO = {
+	color = rgb { 255 153 102 }
+	color_ui = rgb { 255 255 255 }
+}
+ALA = {
+	color = rgb { 102 153 153 }
+	color_ui = rgb { 255 255 255 }
+}
+GEO = {
+	color = rgb { 255 153 0 }
+	color_ui = rgb { 255 255 255 }
+}
+LOU = {
+	color = rgb { 255 80 80 }
+	color_ui = rgb { 255 255 255 }
+}
+TEX = {
+	color = rgb { 0 51 204 }
 	color_ui = rgb { 255 255 255 }
 }

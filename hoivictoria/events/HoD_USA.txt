@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # Hearts of Darkness USA Events
 ###########################
 
@@ -23,8 +23,259 @@ country_event = {
 		days = 7
 	}
 	
+	fire_only_once = yes
+	
 	option = {
 		name = usa.50.a
 		add_political_power = -25
+	}
+}
+
+# Lynn strikes
+country_event = {
+	id = usa.51
+	title = usa.51.t
+	desc = usa.51.d
+	picture = GFX_report_event_worker_protests
+	
+	trigger = {
+		NOT = { has_government = communism }
+		tag = USA
+		date > 1860.2.1
+		date < 1860.7.1
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {	days = 60	}
+
+	option = {
+		ai_chance = {
+			base = 85
+		}
+		name = usa.51.a
+		add_timed_idea = {
+			idea = USA_lynn_strikes
+			days = 180
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}		
+	}
+}
+	# Revoke Worker rights
+	country_event = {
+		id = usa.52
+		title = usa.52.t
+		desc = usa.52.d
+		picture = GFX_report_event_airplane_factory
+		
+		trigger = {
+			NOT = { has_government = communism }
+			has_idea = USA_lynn_strikes
+			date > 1860.7.1
+		}
+
+		fire_only_once = yes
+
+		mean_time_to_happen = {	days = 90	}
+		option = {
+			name = usa.52.a
+			ai_chance = { 
+				factor = 10
+				modifier = {
+					factor = 0
+					communism > 0.4
+				}	
+			}
+			remove_ideas =  USA_lynn_strikes
+		}	
+	}
+
+#Wiyot Indian Massacre
+country_event = {
+		id = usa.53
+		title = usa.53.t
+		desc = usa.53.d
+		picture = GFX_news_event_033
+		
+		trigger = {
+			date > 1860.2.20
+			date < 1860.3.15
+		}
+
+		fire_only_once = yes
+
+		mean_time_to_happen = {	days = 7 }
+		
+		option = {
+			name = usa.52.a
+			ai_chance = { 
+				factor = 100	
+			}
+			add_political_power = -25
+		}	
+}
+	
+#Pony Express
+country_event = {
+		id = usa.54
+		title = usa.54.t
+		desc = usa.54.d
+		picture = GFX_event_destroyers
+		
+		trigger = {
+			date > 1860.4.1
+			date < 1860.4.30
+		}
+
+		fire_only_once = yes
+
+		mean_time_to_happen = {	days = 7 }
+		
+		option = {
+			name = usa.54.a
+			ai_chance = { 
+				factor = 100	
+			}
+			add_political_power = 100
+		}	
+}
+
+#Elgin Disaster
+country_event = {
+		id = usa.55
+		title = usa.55.t
+		desc = usa.55.d
+		picture = GFX_event_elgin
+		
+		trigger = {
+			date > 1860.10.1
+			date < 1860.10.30
+		}
+
+		fire_only_once = yes
+
+		mean_time_to_happen = {	days = 7 }
+		
+		option = {
+			name = usa.55.a
+			ai_chance = { 
+				factor = 100	
+			}
+			add_political_power = -10
+		}	
+}
+
+# Election of 1860: Lincoln vs. Breckinridge
+country_event = {
+	id = usa.56
+	title = usa.56.t
+	desc = usa.56.d
+	picture = GFX_report_event_usa_election_generic
+
+	trigger = {
+		tag = USA
+		democratic > 0.5
+		date > 1860.11.1
+		date < 1860.11.10
+	}
+	
+	mean_time_to_happen = {	days = 7 }
+	
+	option = { 	
+		name = usa.56.a
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		set_country_flag = lincoln_wins
+	}
+
+	option = { 
+		name = usa.56.b
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_country_flag = breckinridge_wins
+	}
+}
+
+# Lincoln Innaugeration
+country_event = {
+	id = usa.57
+	title = usa.57.t
+	desc = usa.57.d
+	picture = GFX_report_event_usa_election_generic
+
+	trigger = {
+		USA = { has_country_flag = lincoln_wins }
+		tag = USA
+		democratic > 0.5
+		date > 1861.3.1
+		date < 1861.3.30
+	}
+	
+	mean_time_to_happen = {	days = 7 }
+	
+	option = { 	
+		name = usa.57.a
+		ai_chance = {
+			factor = 100
+		}
+		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
+		create_country_leader = {
+			name = "President Abraham Lincoln"
+			desc = ""
+			picture = "gfx/leaders/USA/Abraham_Lincoln.dds"
+			expire = "1865.10.1"
+			ideology = liberalism
+			traits = {
+				
+			}
+		}
+	}
+}
+
+# Breckinridge Innaugeration
+country_event = {
+	id = usa.58
+	title = usa.58.t
+	desc = usa.58.d
+	picture = GFX_report_event_usa_election_generic
+
+	trigger = {
+		USA = { has_country_flag = breckinridge_wins }
+		tag = USA
+		democratic > 0.5
+		date > 1861.3.1
+		date < 1861.3.30
+	}
+	
+	mean_time_to_happen = {	days = 7 }
+	
+	option = { 	
+		name = usa.58.a
+		ai_chance = {
+			factor = 100
+		}
+		create_country_leader = {
+			name = "President John C. Breckinridge"
+			desc = ""
+			picture = "gfx/leaders/USA/John_C_Breckinridge.dds"
+			expire = "1880.1.1"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
 	}
 }

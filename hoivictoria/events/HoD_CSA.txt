@@ -1,0 +1,742 @@
+﻿###########################
+# Hearts of Darkness CSA Events
+###########################
+
+add_namespace = csa
+
+#South Carolina Secession
+country_event = {
+	id = csa.1
+	title = csa.1.t
+	desc = csa.1.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1860.12.10
+		date < 1861.1.1
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.1.a
+		add_political_power = -50
+		364 = {
+			add_core_of = SSC
+		}
+		SSC = {
+			transfer_state = 364 
+		}
+	}
+}
+
+#Mississippi Secession
+country_event = {
+	id = csa.2
+	title = csa.2.t
+	desc = csa.2.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1861.1.1
+		date < 1861.1.20
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.2.a
+		add_political_power = -50
+		370 = {
+			add_core_of = MIS
+		}
+		MIS = {
+			transfer_state = 370
+		}
+	}
+}
+
+#Florida Secession
+country_event = {
+	id = csa.3
+	title = csa.3.t
+	desc = csa.3.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1861.1.2
+		date < 1861.1.21
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.3.a
+		add_political_power = -50
+		366 = {
+			add_core_of = FLO
+		}
+		FLO = {
+			transfer_state = 366
+		}
+	}
+}
+
+#Alabama Secession
+country_event = {
+	id = csa.4
+	title = csa.4.t
+	desc = csa.4.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1861.1.5
+		date < 1861.1.25
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.4.a
+		add_political_power = -50
+		367 = {
+			add_core_of = ALA
+		}
+		ALA = {
+			transfer_state = 367
+		}
+	}
+}
+
+#Georgia Secession
+country_event = {
+	id = csa.5
+	title = csa.5.t
+	desc = csa.5.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1861.1.10
+		date < 1861.1.30
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.5.a
+		add_political_power = -50
+		365 = {
+			add_core_of = GRG
+		}
+		GRG = {
+			transfer_state = 365
+		}
+	}
+}
+
+#Louisiana Secession
+country_event = {
+	id = csa.6
+	title = csa.6.t
+	desc = csa.6.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1861.1.15
+		date < 1861.2.5
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.6.a
+		add_political_power = -50
+		371 = {
+			add_core_of = LOU
+		}
+		LOU = {
+			transfer_state = 371
+		}
+	}
+}
+
+#Texas Secession
+country_event = {
+	id = csa.7
+	title = csa.7.t
+	desc = csa.7.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1861.1.25
+		date < 1861.2.10
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.7.a
+		add_political_power = -50
+		375 = {
+			add_core_of = TEX
+		}
+		TEX = {
+			transfer_state = 375
+		}
+	}
+}
+
+#Formation of the CSA
+country_event = {
+	id = csa.8
+	title = csa.8.t
+	desc = csa.8.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ALA
+		date > 1861.2.1
+		date < 1861.2.15
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.8.a
+		367 = {
+			add_core_of = CSA
+		}
+		375 = {
+			add_core_of = CSA
+		}
+		371 = {
+			add_core_of = CSA
+		}
+		365 = {
+			add_core_of = CSA
+		}
+		366 = {
+			add_core_of = CSA
+		}
+		370 = {
+			add_core_of = CSA
+		}
+		364 = {
+			add_core_of = CSA
+		}
+		CSA = {
+			transfer_state = 367
+			transfer_state = 375
+			transfer_state = 371
+			transfer_state = 365
+			transfer_state = 366
+			transfer_state = 370
+			transfer_state = 364
+		}
+	}
+}
+
+#Ft Sumter
+country_event = {
+	id = csa.9
+	title = csa.9.t
+	desc = csa.9.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CSA
+		date > 1861.4.5
+		date < 1861.4.15
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.9.a
+		declare_war_on = { 
+			target = USA
+			type = civil_war
+		}
+	}
+}
+
+#Virginia Secession (USA)
+country_event = {
+	id = csa.10
+	title = csa.10.t
+	desc = csa.10.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1861.4.10
+		date < 1861.4.25
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.10.a
+		add_political_power = -50
+		CSA = {
+			transfer_state = 362
+			transfer_state = 801
+			country_event = {id = csa.11}
+		}
+	}
+}
+
+#Virginia Secession (CSA)
+country_event = {
+	id = csa.11
+	title = csa.11.t
+	desc = csa.11.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.11.a
+		add_political_power = 50
+		362 = {
+			add_core_of = CSA
+		}
+		801 = {
+			add_core_of = CSA
+		}
+		CSA = {
+			country_event = {id = csa.12}
+		}
+	}
+}
+
+#Capital to Richmond
+country_event = {
+	id = csa.12
+	title = csa.12.t
+	desc = csa.12.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.12.a
+		add_political_power = 15
+		set_capital = 362
+	}
+}
+
+#Arkansas Secession (USA)
+country_event = {
+	id = csa.13
+	title = csa.13.t
+	desc = csa.13.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1861.5.1
+		date < 1861.5.15
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.13.a
+		add_political_power = -50
+		CSA = {
+			transfer_state = 372
+			country_event = {id = csa.14}
+		}
+	}
+}
+
+#Arkansas Secession (CSA)
+country_event = {
+	id = csa.14
+	title = csa.14.t
+	desc = csa.14.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.14.a
+		add_political_power = 50
+		372 = {
+			add_core_of = CSA
+		}
+	}
+}
+
+#Tennesee Secession (USA)
+country_event = {
+	id = csa.15
+	title = csa.15.t
+	desc = csa.15.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1861.5.1
+		date < 1861.5.15
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.15.a
+		add_political_power = -50
+		CSA = {
+			transfer_state = 368
+			country_event = {id = csa.16}
+		}
+	}
+}
+
+#Tennesee Secession (CSA)
+country_event = {
+	id = csa.16
+	title = csa.16.t
+	desc = csa.16.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.16.a
+		add_political_power = 50
+		368 = {
+			add_core_of = CSA
+		}
+	}
+}
+
+#North Carolina Secession (USA)
+country_event = {
+	id = csa.17
+	title = csa.17.t
+	desc = csa.17.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		tag = USA
+		date > 1861.5.15
+		date < 1861.5.30
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.17.a
+		add_political_power = -50
+		CSA = {
+			transfer_state = 363
+			country_event = {id = csa.18}
+		}
+	}
+}
+
+#North Carolina Secession (CSA)
+country_event = {
+	id = csa.18
+	title = csa.18.t
+	desc = csa.18.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.18.a
+		add_political_power = 50
+		363 = {
+			add_core_of = CSA
+		}
+	}
+}
+
+#West Virginia Secession (CSA)
+country_event = {
+	id = csa.19
+	title = csa.19.t
+	desc = csa.19.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CSA
+		date > 1861.6.1
+		date < 1861.6.30
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = csa.19.a
+		add_political_power = -50
+		USA = {
+			transfer_state = 801
+			country_event = {id = csa.18}
+		}
+	}
+}
+
+#West Virginia Secession (USA)
+country_event = {
+	id = csa.20
+	title = csa.20.t
+	desc = csa.20.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.20.a
+		add_political_power = 50
+	}
+}
+
+# Swing State Secession Trigger (HIDDEN)
+country_event = {
+	id = csa.21
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { USA = { has_country_flag = breckinridge_wins} }
+		date > 1861.6.1
+		date < 1861.8.1
+		country_exists = USA
+		country_exists = CSA
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		random_list = {
+			10 = { USA = { country_event = { id = csa.22 } } }
+			10 = { USA = { country_event = { id = csa.24 } } }
+			10 = { USA = { country_event = { id = csa.26 } } }
+			5 = { USA = { country_event = { id = csa.22 } country_event = { id = csa.24 } } }
+			5 = { USA = { country_event = { id = csa.22 } country_event = { id = csa.26 } } }
+			5 = { USA = { country_event = { id = csa.24 } country_event = { id = csa.26 } } }
+			5 = { USA = { country_event = { id = csa.22 } country_event = { id = csa.24 } country_event = { id = csa.26 }} }
+			50 = {}
+		}
+	}
+	
+	option = {
+		name = csa.21.a
+	}
+}
+
+#Maryland Secession (USA)
+country_event = {
+	id = csa.22
+	title = csa.22.t
+	desc = csa.22.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.22.a
+		add_political_power = -50
+		CSA = {
+			transfer_state = 361
+			country_event = {id = csa.23}
+		}
+	}
+}
+
+#Maryland Secession (CSA)
+country_event = {
+	id = csa.23
+	title = csa.23.t
+	desc = csa.23.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.23.a
+		add_political_power = 50
+		361 = {
+			add_core_of = CSA
+		}
+	}
+}
+
+#Kentucky Secession (USA)
+country_event = {
+	id = csa.24
+	title = csa.24.t
+	desc = csa.24.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.24.a
+		add_political_power = -50
+		CSA = {
+			transfer_state = 369
+			country_event = {id = csa.25}
+		}
+	}
+}
+
+#Kentucky Secession (CSA)
+country_event = {
+	id = csa.25
+	title = csa.25.t
+	desc = csa.25.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.25.a
+		add_political_power = 50
+		369 = {
+			add_core_of = CSA
+		}
+	}
+}
+
+#Missouri Secession (USA)
+country_event = {
+	id = csa.26
+	title = csa.26.t
+	desc = csa.26.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.26.a
+		add_political_power = -50
+		CSA = {
+			transfer_state = 373
+			country_event = {id = csa.27}
+		}
+	}
+}
+
+#Missouri Secession (CSA)
+country_event = {
+	id = csa.27
+	title = csa.27.t
+	desc = csa.27.d
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.27.a
+		add_political_power = 50
+		373 = {
+			add_core_of = CSA
+		}
+	}
+}
