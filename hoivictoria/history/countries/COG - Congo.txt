@@ -31,13 +31,10 @@ set_convoys = 5
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
 
 		#industry
 		basic_machine_tools = 1
 		construction1 = 1
-		construction2 = 1
 	}
 }
 set_politics = {

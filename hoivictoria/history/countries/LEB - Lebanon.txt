@@ -3,7 +3,6 @@
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	gwtank = 1
 }
 
 set_convoys = 5
@@ -39,12 +38,9 @@ set_convoys = 5
 
 		#electronics
 		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
 
 		#industry
 		basic_machine_tools = 1
-		improved_ = 1
 		construction1 = 1
 		construction2 = 1
 	}
