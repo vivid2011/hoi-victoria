@@ -40,9 +40,6 @@ technologies = {
 			air_doctrine = -1.0
 			light_air = -2.0
 		}
-		available = {
-			date = 1890.1.1.12
-		}
 	}
 
 	infrastructure_destruction = {
