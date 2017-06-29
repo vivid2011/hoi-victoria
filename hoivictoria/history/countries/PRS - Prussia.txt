@@ -15,6 +15,29 @@ set_research_slots = 3
 set_convoys = 200
 set_national_unity = 0.9
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = OLD
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = MEC
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = SCG
+		autonomous_state = autonomy_dominion
+	}
+	else = {
+		puppet = OLD
+		puppet = MEC
+		puppet = SCG
+	}
+}
+
 set_politics = {
 
 	parties = {
@@ -44,15 +67,9 @@ set_politics = {
 
 create_faction = GermanConfederation
 add_to_faction = PRS
-add_to_faction = BAV
-add_to_faction = SAX
 add_to_faction = SCG
-add_to_faction = HES
-add_to_faction = WUR
-add_to_faction = BAD
 add_to_faction = MEC
 add_to_faction = OLD
-add_to_faction = HAN
 add_to_faction = AUS
 
 add_ideas = {

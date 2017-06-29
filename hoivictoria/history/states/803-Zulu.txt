@@ -1,0 +1,24 @@
+
+state={
+	id=803
+	name="STATE_803"
+	resources={
+		chromium=20.000
+	}
+
+	history={
+		owner = ZUL
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		 8178  1494
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -2473,6 +2473,35 @@
  communism_banned:0 "Communism Banned"
  takuo_godo:0 "Takuo Godo"
  
- #HOD IDEAS#
- 
+#HOD IDEAS#
+
+ #USA
  USA_lynn_strikes:0 "Lynn Strikes"
+ 
+ #JAPAN
+ tokugawasystem:0 "Edo Class System"
+ tokugawasystem_desc:0 "The Edo System was a class system that developed during the Edo Era under Tokugawa rule. It was heavily restrictive regarding who could enter military service as a samurai."
+ japanesemil1:0 "French Military Advisors"
+ japanesemil1_desc:0 "We have invited French Officers to oversee the modernization and organization of our military. Through this we shall see to the defense of our most divine lands."
+ japanesemil2:0 "Modernized Samurai"
+ japanesemil2_desc:0 "The Samurai and Daimyo of the realm have begun to adopt western tactics, uniforms, and weapons from French, British, and American salesmen."
+ japanesemil3:0 "New Japanese Officer Corps"
+ japanesemil3_desc:0 "A new Corps of Japanese Officers has arisen, made of men of all classes seeking to serve the Emperor with the highest discpline possible."
+ 
+ #GREECE
+ the_senate:0 "The Senate"
+ the_senate_desc:0 "The Most important political institution in ancient rome was the senate,now the system has been reformed and has eliminated cronism and corruption,many nations are continuing to instate this form of governing,the new senate was first enacted in rome,it may lead to be the main type of government for many nations."
+ greek_parliament:0 "Hellenic Parliament"
+ greek_parliament_desc:0 "To aviod similarity to the tyrant Otto,George the first has given more power to the hellenic parliament,It is a unicameral legislature of 300 members, elected for a four-year term. During 1844–63 and 1927–35 the parliament was bicameral with an upper house, the Senate, and a lower house, the Chamber of Deputies, which retained the name Vouli. Several important Greek statesmen will serve as Speakers of the Hellenic Parliament."
+ 
+ #JAPAN
+ tokugawasystem:0 "Edo Class System"
+ tokugawasystem_desc:0 "The Edo System was a class system that developed during the Edo Era under Tokugawa rule. It was heavily restrictive regarding who could enter military service as a samurai."
+ japanesemil1:0 "French Military Advisors"
+ japanesemil1_desc:0 "We have invited French Officers to oversee the modernization and organization of our military. Through this we shall see to the defense of our most divine lands."
+ japanesemil2:0 "Modernized Samurai"
+ japanesemil2_desc:0 "The Samurai and Daimyo of the realm have begun to adopt western tactics, uniforms, and weapons from French, British, and American salesmen."
+ japanesemil3:0 "New Japanese Officer Corps"
+ japanesemil3_desc:0 "A new Corps of Japanese Officers has arisen, made of men of all classes seeking to serve the Emperor with the highest discpline possible."
+ japanesetreaties:0 "Unequal Treaties of Japan"
+ japanesetreaties_desc:0 "The unequal treaties were a series of treaties that heavily restricted Japans sovereign and economic rights on the global scale."

@@ -12,15 +12,14 @@ state={
 
 	history={
 		owner = RAJ
+		add_core_of = BUR
 		victory_points = {
 			1330 5 
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
-			air_base = 1
+			infrastructure = 2
 			1330 = {
-				naval_base = 4
+				naval_base = 2
 			}
 		}
 

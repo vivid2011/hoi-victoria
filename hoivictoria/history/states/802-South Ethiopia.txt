@@ -1,0 +1,26 @@
+state=
+{
+	id=802
+	name="STATE_802"
+	manpower = 2000000
+	resources={
+		rubber=1
+	}
+	
+	state_category = town
+
+	history=
+	{
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 
+			7980 1.0 
+		}
+		add_claim_by = ETH
+	}
+
+	provinces= {
+	12812 4995 8062 8019 7912 10734 8036 10775 12757 12714 7980 
+	}
+}

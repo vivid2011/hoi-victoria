@@ -1,0 +1,117 @@
+﻿###########################
+# Hearts of Darkness Japanese Events
+###########################
+
+add_namespace = japan
+
+# Boshin War!
+country_event = {
+	id = japan.123
+	title = japan.123.t
+	desc = japan.123.d
+	picture = GFX_report_event_boshin_war
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = japan.123.a
+		JAP = { declare_war_on = { target = SHO type = annex_everything }}
+		SHO = { declare_war_on = { target = JAP type = annex_everything }}
+		282 = { add_core_of = SHO }
+		532 = { add_core_of = SHO }
+		533 = { add_core_of = SHO }
+		534 = { add_core_of = SHO }
+		535 = { add_core_of = SHO }
+		536 = { add_core_of = SHO }
+		531 = { add_core_of = SHO }
+		530 = { add_core_of = SHO }
+		529 = { add_core_of = SHO }
+		528 = { add_core_of = SHO }
+		645 = { add_core_of = SHO }
+		648 = { add_core_of = SHO }
+		SHO = { set_state_owner = 282 }
+		SHO = { set_state_owner = 532 }
+		SHO = { set_state_owner = 533 }
+		SHO = { set_state_owner = 534 }
+		SHO = { set_state_owner = 535 }
+		SHO = { set_state_owner = 536 }
+		SHO = { set_state_owner = 645 }
+		SHO = { set_state_owner = 648 }
+		SHO = { set_state_controller = 282 }
+		SHO = { set_state_controller = 532 }
+		SHO = { set_state_controller = 533 }
+		SHO = { set_state_controller = 534 }
+		SHO = { set_state_controller = 535 }
+		SHO = { set_state_controller = 536 }
+		SHO = { set_state_controller = 645 }
+		SHO = { set_state_controller = 648 }
+		}
+	}
+	
+# Iemochi DIES
+country_event = {
+    id = japan.124
+    title = japan.124.t
+    desc = japan.124.d
+    picture = GFX_report_event_iemochi
+ 
+    fire_only_once = yes
+ 
+    trigger = {
+        original_tag = JAP
+        has_government = neutrality
+        date > 1866.8.29
+        NOT = { has_country_flag = iemochi_dead }
+    }
+
+    mean_time_to_happen = {
+        days = 7
+    }
+
+    option = {
+        name = japan.124.a
+        retire_country_leader = yes
+        create_country_leader = {
+        	name = "Tokugawa Yoshinobu"
+        	desc = ""
+        	picture = "gfx/leaders/JAP/Yoshinobu.dds"
+        	expire = "1913.11.22"
+        	ideology = despotism
+        	traits = {
+        	      }
+            }
+        set_country_flag = iemochi_dead
+      }
+}
+
+# Boshin War - Imperial Victory
+country_event = {
+	id = japan.125
+	title = japan.125.t
+	desc = japan.125.d
+	picture = GFX_report_event_boshin_imperial
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = japan.125.a
+		annex_country = { target = SHO transfer_troops = no }
+		282 = { remove_core_of = SHO }
+		532 = { remove_core_of = SHO }
+		533 = { remove_core_of = SHO }
+		534 = { remove_core_of = SHO }
+		535 = { remove_core_of = SHO }
+		536 = { remove_core_of = SHO }
+		531 = { remove_core_of = SHO }
+		530 = { remove_core_of = SHO }
+		529 = { remove_core_of = SHO }
+		528 = { remove_core_of = SHO }
+		645 = { remove_core_of = SHO }
+		648 = { remove_core_of = SHO }
+		}
+	}
+}

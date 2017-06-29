@@ -31,7 +31,8 @@ country_event = {
 			add_core_of = SSC
 		}
 		SSC = {
-			transfer_state = 364 
+			transfer_state = 364
+			load_oob = SSC_1860
 		}
 	}
 }
@@ -64,6 +65,7 @@ country_event = {
 		}
 		MIS = {
 			transfer_state = 370
+			load_oob = MIS_1861
 		}
 	}
 }
@@ -96,6 +98,7 @@ country_event = {
 		}
 		FLO = {
 			transfer_state = 366
+			load_oob = FLO_1861
 		}
 	}
 }
@@ -128,6 +131,7 @@ country_event = {
 		}
 		ALA = {
 			transfer_state = 367
+			load_oob = ALA_1861
 		}
 	}
 }
@@ -160,6 +164,7 @@ country_event = {
 		}
 		GRG = {
 			transfer_state = 365
+			load_oob = GRG_1861
 		}
 	}
 }
@@ -192,6 +197,7 @@ country_event = {
 		}
 		LOU = {
 			transfer_state = 371
+			load_oob = LOU_1861
 		}
 	}
 }
@@ -224,6 +230,7 @@ country_event = {
 		}
 		TEX = {
 			transfer_state = 375
+			load_oob = TEX_1861
 		}
 	}
 }
@@ -271,13 +278,14 @@ country_event = {
 			add_core_of = CSA
 		}
 		CSA = {
-			transfer_state = 367
-			transfer_state = 375
-			transfer_state = 371
-			transfer_state = 365
-			transfer_state = 366
-			transfer_state = 370
-			transfer_state = 364
+			annex_country = { target = SSC transfer_troops = yes }
+			annex_country = { target = GRG transfer_troops = yes }
+			annex_country = { target = FLO transfer_troops = yes }
+			annex_country = { target = ALA transfer_troops = yes }
+			annex_country = { target = MIS transfer_troops = yes }
+			annex_country = { target = LOU transfer_troops = yes }
+			annex_country = { target = TEX transfer_troops = yes }
+			load_oob = CSA_1861
 		}
 	}
 }

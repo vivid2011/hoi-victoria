@@ -12,6 +12,44 @@ set_technology = {
 	early_heavy_cruiser = 1
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = SAX
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = BAV
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = WUR
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = BAD
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = HAN
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = HES
+		autonomous_state = autonomy_dominion
+	}
+	else = {
+		puppet = SAX
+		puppet = BAV
+		puppet = WUR
+		puppet = BAD
+		puppet = HAN
+		puppet = HES
+	}
+}
+
 set_politics = {
 
 	parties = {

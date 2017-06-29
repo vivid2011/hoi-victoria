@@ -60,6 +60,80 @@ add_namespace = {
 	type = unit_leader
 }
 
+create_field_marshal = {
+	name = "Robert E. Lee"
+	picture = "Portrait_CSA_Lee.dds"
+	traits = { offensive_doctrine defensive_doctrine thorough_planner organisational_leader inspirational_leader }
+	skill = 5
+	id = 1000
+}
+
+create_corps_commander = {
+	name = "Thomas 'Stonewall' Jackson"
+	picture = "Portrait_CSA_Jackson.dds"
+	traits = { trickster trait_engineer stonewall }
+	skill = 4
+	id = 1001
+}
+
+create_corps_commander = {
+	name = "William Bedford Forrest"
+	picture = "Portrait_CSA_Forrest.dds"
+	traits = { trickster trait_engineer ranger }
+	skill = 4
+	id = 1002
+}
+
+create_corps_commander = {
+	name = "James Longstreet"
+	picture = "Portrait_CSA_Longstreet.dds"
+	traits = {  }
+	skill = 3
+	id = 1003
+}
+
+create_corps_commander = {
+	name = "J.E.B. Stuart"
+	picture = "Portrait_CSA_Stuart.dds"
+	traits = { trickster }
+	skill = 2
+	id = 1004
+}
+
+create_corps_commander = {
+	name = "William 'Bloody Bill' Anderson"
+	picture = "Portrait_CSA_Anderson.dds"
+	traits = {  }
+	skill = 2
+	id = 1005
+}
+
+create_corps_commander = {
+	name = "John Mosby"
+	picture = "Portrait_CSA_Mosby.dds"
+	traits = { trickster }
+	skill = 2
+	id = 1006
+}
+
+create_corps_commander = {
+	name = "Braxton Bragg"
+	picture = "Portrait_CSA_Bragg.dds"
+	traits = {  }
+	skill = 1
+	id = 1007
+}
+
+create_corps_commander = {
+	name = "George Pickett"
+	picture = "Portrait_CSA_Pickett.dds"
+	traits = {  }
+	skill = 1
+	id = 1008
+}
+
+
+
 #create_field_marshal = {
 #	name = "Gerd von Rundstedt"
 #	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"

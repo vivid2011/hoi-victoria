@@ -86,6 +86,71 @@ add_namespace = {
 	type = unit_leader
 }
 
+create_field_marshal = {
+	name = "Ulysses S. Grant"
+	picture = "Portrait_USA_Grant.dds"
+	traits = { offensive_doctrine organisational_leader }
+	skill = 4
+	id = 1009
+}
+
+create_corps_commander = {
+	name = "William Tecumseh Sherman"
+	picture = "Portrait_USA_Sherman.dds"
+	traits = { trickster trait_engineer fortress_buster commando}
+	skill = 4
+	id = 1010
+}
+
+create_corps_commander = {
+	name = "George Mcclellan"
+	picture = "Portrait_USA_Mcclellan.dds"
+	traits = { trickster trait_engineer }
+	skill = 4
+	id = 1011
+}
+
+create_corps_commander = {
+	name = "Arthur Macarthur"
+	picture = "Portrait_USA_Macarthur.dds"
+	traits = { trickster }
+	skill = 4
+	id = 1012
+}
+
+create_corps_commander = {
+	name = "Winfield Scott Hancock"
+	picture = "Portrait_USA_Hancock.dds"
+	traits = {  }
+	skill = 3
+	id = 1013
+}
+
+create_corps_commander = {
+	name = "Ambrose Burnside"
+	picture = "Portrait_USA_Burnside.dds"
+	traits = {  }
+	skill = 2
+	id = 1014
+}
+
+create_corps_commander = {
+	name = "Benjamin Butler"
+	picture = "Portrait_USA_Butler.dds"
+	traits = {  }
+	skill = 2
+	id = 1015
+}
+
+create_corps_commander = {
+	name = "Nathaniel Banks"
+	picture = "Portrait_USA_Banks.dds"
+	traits = {  }
+	skill = 1
+	id = 1016
+}
+
+
 #create_field_marshal = {
 #	name = "Gerd von Rundstedt"
 #	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"

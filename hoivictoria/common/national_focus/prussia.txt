@@ -23,20 +23,16 @@ focus_tree = {
 		mutually_exclusive = { }
 		prerequisite = { }
 		available = {  }
-		cost = 4 
+		cost = 20
 		available_if_capitulated = yes 
 		completion_reward = {
 			add_manpower = 25000
-		= {
-			type = infantry_weapons
-			amount = 10000
-			producer = PRS
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 0.25
+			uses = 1
+			category = land_doctrine
 		}
- = {
- bonus = 0.75 
-uses = 2 
-category = land_doctrine
-}
 }
 }
 
@@ -51,7 +47,7 @@ category = land_doctrine
 			mutually_exclusive = { }
 		prerequisite = { focus = prepareforwar}
 available = {  }
-cost = 3 
+cost = 20
  available_if_capitulated = yes 
 completion_reward = {
 add_opinion_modifier= { 
@@ -91,7 +87,7 @@ y =3
 mutually_exclusive = { }
 prerequisite = { focus = conquestofschleswigholstein}
 available = {  }
-cost = 3 
+cost = 20
  available_if_capitulated = yes 
 completion_reward = {
 add_manpower = 50000
@@ -109,11 +105,14 @@ y =2
 mutually_exclusive = { }
 prerequisite = { focus = realpolitik}
 available = {  }
-cost = 3 
+cost = 20
  available_if_capitulated = yes 
 completion_reward = {
+58 = {
+add_core_of = PRS
+}
 create_wargoal = { 
-type = annex_everything 
+type = take_core_state
 target = DEN
 }
 }
@@ -129,7 +128,7 @@ y =5
 mutually_exclusive = { }
 prerequisite = { focus = formthenorthgermanconfederation}
 available = {  }
-cost = 3 
+cost = 20
  available_if_capitulated = yes 
 completion_reward = {
 declare_war_on= { 
@@ -149,7 +148,7 @@ y =4
 mutually_exclusive = { }
 prerequisite = { focus = prepareforwarwithaustria}
 available = {  }
-cost = 3 
+cost = 20
  available_if_capitulated = yes 
 completion_reward = {
 dismantle_faction = yes
@@ -178,7 +177,7 @@ y =6
 mutually_exclusive = { focus = germanyunitedagainstacommonfoe}
 prerequisite = { focus = prussiandominance}
 available = {  }
-cost = 3 
+cost = 20
  available_if_capitulated = yes 
 completion_reward = {
 declare_war_on= { 
@@ -210,7 +209,7 @@ y =6
 mutually_exclusive = { focus = unitegermanymilitarily}
 prerequisite = { focus = prussiandominance}
 available = { has_defensive_war_with = FRA  }
-cost = 3 
+cost = 20
  available_if_capitulated = yes 
 completion_reward = {
 add_to_faction = HAN
@@ -222,7 +221,7 @@ add_to_faction = BAD
 #Focus for - The German Eagle Rises!
 focus = {
 id =thegermaneaglerises
-icon =GFX_goal_generic_support_fascism
+icon =GFX_goal_generic_political_pressure
 bypass = {}
 ai_will_do = { factor = 5}
 x =5
@@ -230,7 +229,7 @@ y =7
 mutually_exclusive = { }
 prerequisite = { focus = germanyunitedagainstacommonfoe  focus = unitegermanymilitarily}
 available = {  }
-cost = 3 
+cost = 20
  available_if_capitulated = yes 
 completion_reward = {
 annex_country  = {

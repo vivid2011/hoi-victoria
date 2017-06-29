@@ -18,7 +18,7 @@ ideologies = {
 			"FACTION_NAME_MONARCHIST_6"
 		}
 		
-		color = { 255 204 0 }
+		color = { 153 0 153 }
 		
 		rules = {
 			can_declare_war_on_same_ideology = yes
@@ -30,21 +30,17 @@ ideologies = {
 			can_guarantee_other_ideologies = no
 		}
 		
-		war_impact_on_world_tension = 1.00
-		faction_impact_on_world_tension = 0.25
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.5
 		
-		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 1.00
-			lend_lease_tension = 1.00
-			send_volunteers_tension = 1.00
-			guarantee_tension = 0.25
-			take_states_cost_factor = 0.25
-			annex_cost_factor = 0.5
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
 		}
 		
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.10 #plus 50% trade opinion
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.25
 		}
 		ai_fascist = yes
 	}

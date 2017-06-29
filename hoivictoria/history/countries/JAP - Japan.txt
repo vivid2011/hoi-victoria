@@ -1,13 +1,14 @@
-﻿capital = 282
+﻿capital = 531
 
 oob = "JAP_1860"
 
-set_national_unity = 0.65
+set_national_unity = 0.45
 
 set_research_slots = 2
 
 add_ideas = {
-	state_shintoism
+	japanesetreaties
+	tokugawasystem
 }
 
 set_technology = {
@@ -28,27 +29,39 @@ set_politics = {
 			popularity = 0
 		}
 		
+		neutrality = {
+			popularity = 70
+		}
+		
 		communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
 		monarchist = {
-			popularity = 100
+			popularity = 30
 		}
 	}
 	
-	ruling_party = monarchist
+	ruling_party = neutrality
 	last_election = "1800.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Emperor Kōmei"
+	name = "Tokugawa Iemochi"
 	desc = ""
-	picture = "gfx/leaders/JAP/Komei.dds"
-	expire = "1867.1.30"
+	picture = "gfx/leaders/JAP/ieomochi.dds"
+	expire = "1866.8.29"
+	ideology = despotism
+}
+
+create_country_leader = {
+	name = "Emperor Meiji"
+	desc = ""
+	picture = "gfx/leaders/JAP/Meiji.dds"
+	expire = "1912.7.30"
 	ideology = imperial
 }
 

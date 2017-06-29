@@ -12,6 +12,11 @@ set_technology = {
 	early_heavy_cruiser = 1
 }
 
+declare_war_on = {
+	target = MOR
+	type = take_claimed_state
+}
+
 set_politics = {
 
 	parties = {

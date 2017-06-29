@@ -6,7 +6,6 @@ state={
 	state_category = rural
 	history = {
 		owner = TUR
-		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
 			12725 = {

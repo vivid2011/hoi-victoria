@@ -7,12 +7,10 @@ state={
 	state_category = enclave
 
 	history={
-		owner = FRA
 		buildings = {
-			infrastructure = 3
-			air_base = 2
+			infrastructure = 1
 			8124 = {
-				naval_base = 2
+				naval_base = 1
 			}
 		}
 

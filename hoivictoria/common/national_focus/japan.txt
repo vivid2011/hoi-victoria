@@ -1,0 +1,710 @@
+focus_tree = {
+id = japan
+country = {
+factor=0
+modifier = {
+add = 10
+tag = JAP
+}
+}
+default = no
+#Custom focuses start here
+#Focus for - Seek the Emperor's Advice
+focus = {
+id =seektheemperorsadvice
+icon =GFX_goal_tfv_strengthen_commonwealth_ties
+bypass = {}
+ai_will_do = { factor = }
+x =11
+y =1
+mutually_exclusive = { }
+prerequisite = { }
+available = { date >  1863.01.01 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.10
+		}
+}
+}
+#Focus for - Invite Foreigners to Modernize
+focus = {
+id =inviteforeignerstomodernize
+icon =GFX_goal_generic_improve_relations
+bypass = {}
+ai_will_do = { factor = }
+x =5
+y =1
+mutually_exclusive = { }
+prerequisite = { }
+available = {  }
+cost = 10
+ available_if_capitulated = yes 
+completion_reward = {
+		add_national_unity = -0.05
+}
+}
+#Focus for - First Phase of Industrialization
+focus = {
+id =firstphaseofindustrialization
+icon =GFX_goal_generic_construct_civ_factory
+bypass = {}
+ai_will_do = { factor = }
+x =7
+y =2
+mutually_exclusive = { }
+prerequisite = { focus = inviteforeignerstomodernize}
+available = {  }
+cost = 10
+ available_if_capitulated = yes 
+completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_industrial_effort_focus2_1IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_industrial_effort_focus2_1IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_industrial_effort_focus2_1IC
+			}
+}
+}
+#Focus for - First Phase of Armament
+focus = {
+id =firstphaseofarmament
+icon =GFX_goal_generic_construct_mil_factory
+bypass = {}
+ai_will_do = { factor = }
+x =3
+y =2
+mutually_exclusive = { }
+prerequisite = { focus = inviteforeignerstomodernize}
+available = {  }
+cost = 10
+ available_if_capitulated = yes 
+completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_army_primancy_focus_2AF_1
+			}
+	
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_army_primancy_focus_2AF_2
+			}
+
+
+}
+}
+#Focus for - Second Phase of Armament
+focus = {
+id =secondphaseofarmament
+icon =GFX_goal_generic_construct_mil_factory
+bypass = {}
+ai_will_do = { factor = }
+x =3
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = firstphaseofarmament}
+available = { date > 1865.01.01 }
+cost = 10
+ available_if_capitulated = yes 
+completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_army_primancy_focus_2AF_1
+			}
+	
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_army_primancy_focus_2AF_2
+			}
+
+
+}
+}
+#Focus for - Final Phase of Armament
+focus = {
+id =finalphaseofarmament
+icon =GFX_goal_generic_construct_mil_factory
+bypass = {}
+ai_will_do = { factor = }
+x =3
+y =4
+mutually_exclusive = { }
+prerequisite = { focus = secondphaseofarmament}
+available = { date > 1870.01.01 }
+cost = 10
+ available_if_capitulated = yes 
+completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_army_primancy_focus_2AF_1
+			}
+	
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_army_primancy_focus_2AF_2
+			}
+
+
+}
+}
+#Focus for - Finish Military Modernization
+focus = {
+id =finishmilitarymodernization
+icon =GFX_focus_secret_rearmament
+bypass = {}
+ai_will_do = { factor = }
+x =5
+y =4
+mutually_exclusive = { }
+prerequisite = { focus = continuemilitarymodernization}
+available = { date > 1870.01.01 }
+cost = 10
+ available_if_capitulated = yes 
+completion_reward = {
+add_ideas = japanesemil3
+remove_ideas =  japanesemil2
+remove_ideas =  tokugawasystem
+}
+}
+#Focus for - Continue Military Modernization
+focus = {
+id =continuemilitarymodernization
+icon =GFX_focus_secret_rearmament
+bypass = {}
+ai_will_do = { factor = }
+x =5
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = beginmilitarymodernization}
+available = { date >  1865.01.01 }
+cost = 10
+ available_if_capitulated = yes 
+completion_reward = {
+add_ideas = japanesemil2
+remove_ideas =  japanesemil1
+}
+}
+#Focus for - Begin Military Modernization
+focus = {
+id =beginmilitarymodernization
+icon =GFX_focus_secret_rearmament
+bypass = {}
+ai_will_do = { factor = }
+x =5
+y =2
+mutually_exclusive = { }
+prerequisite = { focus = inviteforeignerstomodernize}
+available = {  }
+cost = 10
+ available_if_capitulated = yes 
+completion_reward = {
+add_ideas = japanesemil1
+}
+}
+#Focus for - Second Phase of Industrialization
+focus = {
+id =secondphaseofindustrialization
+icon =GFX_goal_generic_construct_civ_factory
+bypass = {}
+ai_will_do = { factor = }
+x =7
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = firstphaseofindustrialization}
+available = { date > 1865.01.01 }
+cost = 10
+ available_if_capitulated = yes 
+completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_industrial_effort_focus2_1IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_industrial_effort_focus2_1IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_industrial_effort_focus2_1IC
+			}
+}
+}
+#Focus for - Final Phase of Industrialization
+focus = {
+id =finalphaseofindustrialization
+icon =GFX_goal_generic_construct_civ_factory
+bypass = {}
+ai_will_do = { factor = }
+x =7
+y =4
+mutually_exclusive = { }
+prerequisite = { focus = secondphaseofindustrialization}
+available = { date > 1870.01.01 }
+cost = 10
+ available_if_capitulated = yes 
+completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_industrial_effort_focus2_1IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_industrial_effort_focus2_1IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_industrial_effort_focus2_1IC
+			}
+}
+}
+#Focus for - The First American Embassy
+focus = {
+id =thefirstamericanembassy
+icon =GFX_focus_JPN_usa
+bypass = {}
+ai_will_do = { factor = }
+x =19
+y =1
+mutually_exclusive = { }
+prerequisite = { }
+available = {  }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+JAP = { add_opinion_modifier = { target = USA modifier = jap_usa_diplomatic_focus } }
+}
+}
+#Focus for - First European Embassy
+focus = {
+id =firsteuropeanembassy
+icon =GFX_focus_JPN_uk
+bypass = {}
+ai_will_do = { factor = }
+x =17
+y =2
+mutually_exclusive = { }
+prerequisite = { focus = thefirstamericanembassy}
+available = { date > 1862.01.14 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+JAP = { add_opinion_modifier = { target = ENG modifier = jap_uk_diplomatic_focus } }
+}
+}
+#Focus for - Second European Embassy
+focus = {
+id =secondeuropeanembassy
+icon =GFX_focus_JPN_france
+bypass = {}
+ai_will_do = { factor = }
+x =17
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = firsteuropeanembassy}
+available = { date > 1862.12.22 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+JAP = { add_opinion_modifier = { target = FRA modifier = jap_fra_diplomatic_focus } }
+}
+}
+#Focus for - The Iwakura Mission
+focus = {
+id =theiwakuramission
+icon =GFX_goal_generic_intelligence_exchange
+bypass = {}
+ai_will_do = { factor = }
+x =19
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = thefirstamericanembassy}
+available = { date >  1871.12.16 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Order to Expel the Barbarians
+focus = {
+id =ordertoexpelthebarbarians
+icon =GFX_goal_generic_attack_allies
+bypass = {}
+ai_will_do = { factor = }
+x =11
+y =2
+mutually_exclusive = { }
+prerequisite = { focus = seektheemperorsadvice}
+available = { date > 1863.03.04 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+		add_national_unity = -0.05
+		add_popularity = {
+		ideology = monarchist
+		popularity = 0.10
+		}
+}
+}
+#Focus for - Bombardment of Kagoshima
+focus = {
+id =bombardmentofkagoshima
+icon =GFX_goal_generic_army_artillery
+bypass = {}
+ai_will_do = { factor = }
+x =9
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = ordertoexpelthebarbarians}
+available = { date > 1863.08.08 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+army_experience= 10
+}
+}
+#Focus for - Bombardment of Shimoneski
+focus = {
+id =bombardmentofshimoneski
+icon =GFX_goal_generic_amphibious_assault
+bypass = {}
+ai_will_do = { factor = }
+x =13
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = ordertoexpelthebarbarians}
+available = { date > 1863.07.13 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+army_experience= 10
+}
+}
+#Focus for - Initiate the Mito Rebellion
+focus = {
+id =initiatethemitorebellion
+icon =GFX_focus_generic_support_the_left_right
+bypass = {}
+ai_will_do = { factor = }
+x =11
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = ordertoexpelthebarbarians}
+available = {  }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+army_experience= 10
+}
+}
+#Focus for - Unify the Southern Daimyo
+focus = {
+id =unifythesoutherndaimyo
+icon =GFX_goal_tripartite_pact
+bypass = {}
+ai_will_do = { factor = }
+x =9
+y =4
+mutually_exclusive = { }
+prerequisite = { focus = bombardmentofkagoshima}
+available = { date >  1866.04.30 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+add_political_power = 150
+}
+}
+#Focus for - Force Yoshinobu to Resign
+focus = {
+id =forceyoshinobutoresign
+icon =GFX_goal_generic_forceful_treaty
+bypass = {}
+ai_will_do = { factor = }
+x =13
+y =4
+mutually_exclusive = { }
+prerequisite = { focus = bombardmentofshimoneski}
+available = { date >  1867.11.12 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+		set_politics = {
+			ruling_party = monarchist
+			elections_allowed = no
+		}
+}
+}
+#Focus for - Seize the Imperial Palace!
+focus = {
+id =seizetheimperialpalace
+icon =GFX_goal_demand_sudetenland
+bypass = {}
+ai_will_do = { factor = }
+x =11
+y =4
+mutually_exclusive = { }
+prerequisite = { focus = initiatethemitorebellion}
+prerequisite = { focus = forceyoshinobutoresign}
+prerequisite = { focus = unifythesoutherndaimyo}
+available = { date >  1868.01.20 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+JAP = {
+country_event = japan.123
+}
+}
+}
+#Focus for - Charter Oath of Five Principles
+focus = {
+id =charteroathoffiveprinciples
+icon =GFX_focus_JPN_imperial_shield
+bypass = {}
+ai_will_do = { factor = }
+x =15
+y =1
+mutually_exclusive = { }
+prerequisite = { }
+available = { date >  1868.03.30 }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+add_political_power = 300
+		add_popularity = {
+		ideology = monarchist
+		popularity = 0.15
+		}
+}
+}
+#Focus for - The Emperor is Triumphant
+focus = {
+id =theemperoristriumphant
+icon =GFX_focus_rom_royal_dictatorship
+bypass = {}
+ai_will_do = { factor = }
+x =15
+y =2
+mutually_exclusive = { }
+prerequisite = { focus = charteroathoffiveprinciples}
+available = { has_full_control_of_state = 282 }
+cost = 1
+ available_if_capitulated = no
+completion_reward = {
+JAP = {
+country_event = japan.125
+}
+}
+}
+#Focus for - The Nation is United
+focus = {
+id =thenationisunited
+icon =GFX_goal_generic_national_unity
+bypass = {}
+ai_will_do = { factor = }
+x =15
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = theemperoristriumphant}
+available = {  }
+cost = 1
+ available_if_capitulated = yes 
+completion_reward = {
+set_national_unity = 0.70
+}
+}
+#end
+}

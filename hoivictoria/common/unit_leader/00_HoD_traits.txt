@@ -1,0 +1,20 @@
+leader_traits = {
+
+#General
+
+	stonewall = { 
+		type = corps_commander
+		allowed = {
+			always = no # not gainable
+		}
+
+		modifier = {
+			army_morale_factor = 0.15
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

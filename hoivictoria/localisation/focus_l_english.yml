@@ -1874,11 +1874,9 @@
  unitegermanymilitarily_desc:0 "The southern German states still bind themselves to Austria. We must show them the error of their ways."
  germanyunitedagainstacommonfoe:0 "Germany united against a common foe!"
  germanyunitedagainstacommonfoe_desc:0 "Those disgusting French pigs have insulted the German people and our King, we must show them we are not easily trifled with!"
- thegermaneaglerises:0 "The German Eagle Rises!"
- thegermaneaglerises_desc:0 "We have finally bound all our brothers under one leader. Now we declare the rise of a united German Empire!"
+ thegermaneaglerises:0 "The German Eagle Rises!" thegermaneaglerises_desc:0 "We have finally bound all our brothers under one leader. Now we declare the rise of a united German Empire!"
  
  #JAPAN#
- 
  seektheemperorsadvice:0 "Seek the Emperor's Advice"
  seektheemperorsadvice_desc:0 "The barbarian powers increase their hold upon our politics and culture. They must be outwitted and defeated, and the Shogun must accept that the path to this is through the Divinely descended Emperor."
  ordertoexpelthebarbarians:0 "Order to Expel the Barbarians"
@@ -1887,8 +1885,8 @@
  bombardmentofkagoshima_desc:0 "We must fire upon the Foreign ships along our sacred Shores! Sonnō Jōi! Once we show our bravery, surely the foreigners will aid us!"
  initiatethemitorebellion:0 "Initiate the Mito Rebellion"
  initiatethemitorebellion_desc:0 "Although our uprising will surely be struck down, our sacrifices will be necessary. Rise up, in the name of the Emperor! Sonnō Jōi!"
- bombardmentofshimonoseki:0 "Bombardment of Shimonoseki"
- bombardmentofshimonoseki_desc:0 "The Mori Clan shall rise up to the Emperor's Demands, and expel the Barbarians! For the Emperor! It is expected that we shall fail, but our sacrifices shall bring us one step closer to our ultimate triumph."
+ bombardmentofshimoneski:0 "Bombardment of Shimonoseki"
+ bombardmentofshimoneski_desc:0 "The Mori Clan shall rise up to the Emperor's Demands, and expel the Barbarians! For the Emperor! It is expected that we shall fail, but our sacrifices shall bring us one step closer to our ultimate triumph."
  firstamericanembassy:0 "First American Embassy"
  firstamericanembassy_desc:0 "We shall send a warship and ambassadors to the United States, the very nation who did the same to open our borders. By doing so we shall show our progress and commitment to modernization."
  secondeuropeanembassy:0 "Second European Embassy"
@@ -1945,4 +1943,3 @@
  theemperoristriumphant_desc:0 "The Shogun's forces have been driven from Edo and the nation united. No longer shall we remain subservient to a military dictator from years past. Now, the Emperor and his loyal servants shall unite and restore the nation to its full glory! Tenno Heika, Banzai!"
  thenationisunited:0 "The Nation is United"
  thenationisunited_desc:0 "The Emperor has triumphed against the Shogun and his glorious forces have defeated the traitorous Ezo Republic. We are united, and we shall never again allow foreigners to bend us to their ways! Long live the Empire of Japan, and its glorious Emperor, Mutsuhito!"
-

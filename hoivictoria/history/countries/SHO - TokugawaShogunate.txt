@@ -1,0 +1,94 @@
+﻿capital = 282
+
+oob = "SHO_1860"
+
+set_national_unity = 0.45
+
+set_research_slots = 2
+
+add_ideas = {
+	tokugawasystem
+}
+
+set_technology = {
+	early_destroyer = 1
+}
+
+set_convoys = 400
+
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 10
+		}
+
+		fascism = {
+			popularity = 20
+		}
+		
+		neutrality = {
+			popularity = 70
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+		monarchist = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1800.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Tokugawa Yoshinobu"
+	desc = ""
+	picture = "gfx/leaders/JAP/Yoshinobu.dds"
+	expire = "1913.11.22"
+	ideology = despotism
+}
+
+create_country_leader = {
+	name = "Tokugawa Yoshinobu"
+	desc = ""
+	picture = "gfx/leaders/JAP/Yoshinobu.dds"
+	expire = "1913.11.22"
+	ideology = imperial
+}
+
+add_namespace = {
+	name = "ger_unit_leader"
+	type = unit_leader
+}
+
+#create_field_marshal = {
+#	name = "Gerd von Rundstedt"
+#	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
+#	traits = { defensive_doctrine offensive_doctrine }
+#	skill = 3
+#	id = 1
+#}
+
+#create_corps_commander = {
+#	name = "Friedrich Paulus"
+#	picture = "Portrait_Germany_Friedrich_Paulus.dds"
+#	traits = {  }
+#	skill = 1
+#	id = 3
+#}
+
+#create_navy_leader = {
+#	name = "Karl Dönitz"
+#	picture = "Portrait_Germany_Karl_Donitz.dds"
+#	traits = { seawolf }
+#	skill = 5
+#	id = 26
+#}

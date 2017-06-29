@@ -63,6 +63,7 @@
  JAP_communism_party:0 "Nihon Kyosan-to"
  JAP_democratic_party:0 "Rikken Minseito"
  JAP_fascism_party:0 "Taisei Yokusankai"
+ JAP_neutrality_party:0 "Tokugawa Shogunate"
  JAP_monarchist_party:0 "Imperial House of Japan"
  USA_communism_party:0 "Communist Party USA"
  USA_democratic_party:0 "Democratic Party"
@@ -670,3 +671,7 @@
  TRK_monarchist_party:0 "Qungrat Dynasty"
  
  BUR_monarchist_party:0 "Konbaung Dynasty"
+ 
+ ZUL_monarchist_party:0 "Zulu Dynasty"
+ 
+ SWA_monarchist_party:0 "House of Dlamini"

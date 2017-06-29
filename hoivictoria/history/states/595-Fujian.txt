@@ -7,19 +7,13 @@ state= {
 	{
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 2
 			7071 = {
 				naval_base = 1
-				coastal_bunker = 1
-				bunker = 1
 			}
 			4196 = {
 				naval_base = 3
-				coastal_bunker = 1
-				bunker = 1
 			}
 		}
 		victory_points = { 
@@ -27,13 +21,6 @@ state= {
 		}
 		victory_points = { 
 			7071 1 
-		}
-
-		1938.10.25 = {		
-			JAP = {
-				set_province_controller = 4196
-				set_province_controller = 7071
-			} 			
 		}
 	}
 	provinces={
