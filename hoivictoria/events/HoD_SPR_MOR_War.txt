@@ -1,0 +1,83 @@
+﻿###########################
+# Hearts of Darkness Japanese Events
+###########################
+
+add_namespace = sprmor
+
+# Offer Peace (SPR)
+country_event = {
+    id = sprmor.1
+    title = sprmor.1.t
+    desc = sprmor.1.d
+    #picture = GFX_report_event_iemochi
+ 
+    fire_only_once = yes
+ 
+    trigger = {
+        tag = SPR
+        date > 1860.1.1
+		date < 1860.1.10
+    }
+
+    mean_time_to_happen = {
+        days = 7
+    }
+
+    option = {
+        name = sprmor.1.a
+    }
+	
+	option = {
+        name = sprmor.2.a
+		MOR = { country_event = {id = sprmor.2}}
+    }
+	
+	option = {
+        name = sprmor.3.a
+		MOR = { country_event = {id = sprmor.3}}
+    }
+}
+
+# White Peace (to MOR)
+country_event = {
+    id = sprmor.2
+    title = sprmor.2.t
+    desc = sprmor.2.d
+    #picture = GFX_report_event_iemochi
+ 
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+        name = sprmor.2.a
+		SPR = { white_peace = MOR }
+    }
+	
+	option = {
+        name = sprmor.2.a
+    }
+	
+}
+
+# Peace at any cost (to MOR)
+country_event = {
+    id = sprmor.3
+    title = sprmor.3.t
+    desc = sprmor.3.d
+    #picture = GFX_report_event_iemochi
+ 
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+        name = sprmor.3.a
+		290 = { owner = MOR }
+		699 = { remove_claim_by = SPR }
+		SPR = { white_peace = MOR }
+    }
+	
+	option = {
+        name = sprmor.3.a
+    }
+	
+}
