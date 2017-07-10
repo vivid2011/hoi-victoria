@@ -12,6 +12,15 @@ set_technology = {
 	early_heavy_cruiser = 1
 }
 
+declare_war_on = {
+	target = CHI
+	type = topple_government
+}
+
+create_faction = Opium
+add_to_faction = ENG
+add_to_faction = FRA
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"

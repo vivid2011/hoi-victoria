@@ -1,0 +1,346 @@
+﻿###########################
+# Hearts of Darkness CHI Events
+###########################
+
+add_namespace = chi
+
+#Third Battle of Taku Forts (CHI)
+country_event = {
+	id = chi.1
+	title = chi.1.t
+	desc = chi.1.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	
+	trigger = {
+		804 = {
+			controller = CHI
+		}
+		tag = CHI
+		date > 1860.8.12
+		date < 1860.8.21
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = chi.1.a
+		add_political_power = -100
+		ENG = {set_state_controller = 804}
+		FRA = {
+			country_event = {id = chi.2}
+		}
+		ENG = {
+			country_event = {id = chi.2}
+		}
+	}
+}
+
+#Third Battle of Taku Forts (FRA/ENG)
+country_event = {
+	id = chi.2
+	title = chi.2.t
+	desc = chi.2.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.2.a
+		add_political_power = 50
+	}
+}
+
+# The Fall of Tianjin (CHI)
+country_event = {
+	id = chi.3
+	title = chi.3.t
+	desc = chi.3.d
+	picture = GFX_news_event_kiev_ruins
+	
+	trigger = {
+		tag = CHI
+		804 = { controller = ENG }
+		date < 1861.1.1
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		ENG = {country_event = {id = chi.8}}
+		FRA = {country_event = {id = chi.8}}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		name = chi.3.a
+		ENG = {country_event = {id = chi.4}}
+		add_political_power = -150
+	}
+	option = {
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = chi.3.b
+		add_political_power = -100
+	}
+}
+
+# The Fall of Tianjin (ENG/FRA)
+country_event = {
+	id = chi.8
+	title = chi.8.t
+	desc = chi.8.d
+	picture = GFX_news_event_kiev_ruins
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = chi.8.a
+		add_political_power = 100
+	}
+}
+
+# Qing offers Peace at Tianjin (ENG)
+country_event = {
+	id = chi.4
+	title = chi.4.t
+	desc = chi.4.d
+	picture = GFX_news_event_kiev_ruins
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 95
+				is_historical_focus_on = yes
+			}
+		}
+		name = chi.4.a
+		CHI = {country_event = {id = chi.5}}
+		add_political_power = -50
+	}
+	option = {
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
+		name = chi.4.b
+		326 = {remove_core_of = CHI}
+		ENG = {add_ideas = FreeTradeQing}
+		CHI = {country_event = {id = chi.6}}
+		FRA = {country_event = {id = chi.7}}
+		USA = {country_event = {id = chi.7}}
+		SOV = {country_event = {id = chi.9}}
+	}
+}
+
+# ENG imprison peace emmisaries
+country_event = {
+	id = chi.5
+	title = chi.5.t
+	desc = chi.5.d
+	picture = GFX_news_event_kiev_ruins
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = chi.5.a
+		add_political_power = -50
+	}
+}
+
+#Convention of Peking (CHI)
+country_event = {
+	id = chi.6
+	title = chi.6.t
+	desc = chi.6.d
+	picture = GFX_news_event_kiev_ruins
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = chi.6.a
+		add_political_power = -250
+		add_ideas = {ForeignInfluence}
+		ENG = {white_peace = CHI}
+		FRA = {white_peace = CHI}
+	}
+}
+
+#Convention of Peking (FRA/USA)
+country_event = {
+	id = chi.7
+	title = chi.7.t
+	desc = chi.7.d
+	picture = GFX_news_event_kiev_ruins
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = chi.7.a
+		add_political_power = 100
+		add_ideas = {FreeTradeQing}
+	}
+}
+
+#Convention of Peking (SOV)
+country_event = {
+	id = chi.9
+	title = chi.9.t
+	desc = chi.9.d
+	picture = GFX_news_event_kiev_ruins
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = chi.9.a
+		add_political_power = 100
+		add_ideas = {FreeTradeQing}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		name = chi.9.b
+		add_political_power = 150
+		add_ideas = {FreeTradeQing}
+		SOV = {
+			transfer_state = 408
+			transfer_state = 409
+		}
+	}
+}
+
+#Battle of Palikao (CHI)
+country_event = {
+	id = chi.10
+	title = chi.10.t
+	desc = chi.10.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	
+	trigger = {
+		608 = {
+			controller = CHI
+		}
+		tag = CHI
+		date > 1860.10.12
+		date < 1860.10.31
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = chi.10.a
+		add_political_power = -250
+		ENG = {set_state_controller = 608}
+		CHI = {
+			country_event = {id = chi.11}
+		}
+		FRA = {
+			country_event = {id = chi.13}
+		}
+		ENG = {
+			country_event = {id = chi.13}
+		}
+	}
+}
+
+#Forced Surrender (CHI)
+country_event = {
+	id = chi.11
+	title = chi.11.t
+	desc = chi.11.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.11.b
+		326 = {remove_core_of = CHI}
+		ENG = {country_event = {id = chi.12}}
+		CHI = {country_event = {id = chi.6}}
+		FRA = {country_event = {id = chi.7}}
+		USA = {country_event = {id = chi.7}}
+		SOV = {country_event = {id = chi.9}}
+	}
+}
+
+# Conference of Peking (ENG)
+country_event = {
+	id = chi.12
+	title = chi.12.t
+	desc = chi.12.d
+	picture = GFX_news_event_kiev_ruins
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = chi.12.a
+		326 = {remove_core_of = CHI}
+		ENG = {add_ideas = FreeTradeQing}
+	}
+}
+
+#Battle of Palikao (FRA/ENG)
+country_event = {
+	id = chi.13
+	title = chi.13.t
+	desc = chi.13.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.13.a
+		add_political_power = 50
+	}
+}

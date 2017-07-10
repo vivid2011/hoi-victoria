@@ -12,6 +12,11 @@ set_technology = {
 	early_heavy_cruiser = 1
 }
 
+declare_war_on = {
+	target = CHI
+	type = topple_government
+}
+
 set_politics = {
 
 	parties = {

@@ -2505,3 +2505,9 @@
  japanesemil3_desc:0 "A new Corps of Japanese Officers has arisen, made of men of all classes seeking to serve the Emperor with the highest discpline possible."
  japanesetreaties:0 "Unequal Treaties of Japan"
  japanesetreaties_desc:0 "The unequal treaties were a series of treaties that heavily restricted Japans sovereign and economic rights on the global scale."
+ 
+ #CHINA
+ FreeTradeQing:0 "Open Door Policy in China"
+ FreeTradeQing_desc:0 "We will use victory in the Opium Wars to our advantage and use the new market in the East for our economic gain."
+ ForeignInfluence:0 "Foreign Influence on China"
+ ForeignInfluence_desc:0 "Following the Opium Wars, foreign powers have carved up China, strangling it of its economic potential."

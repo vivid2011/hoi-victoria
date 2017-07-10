@@ -10,18 +10,8 @@ set_technology = {
 	early_destroyer = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = KOR
-		autonomous_state = autonomy_dominion
-	}
-	else = {
-		puppet = KOR
-	}
-}
+give_guarantee = KOR
+give_guarantee = VIN
 
 set_politics = {
 

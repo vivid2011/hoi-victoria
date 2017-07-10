@@ -1,0 +1,26 @@
+
+state={
+	id=804
+	name="STATE_804"
+	manpower = 3648400
+	
+	state_category = city
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 3
+			10068 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			10068 10
+		}
+	}
+
+	provinces={
+		9969 4137 10068
+	}
+}

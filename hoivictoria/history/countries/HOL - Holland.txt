@@ -61,7 +61,7 @@ add_ideas = {
 create_country_leader = {
 	name = "King William III"
 	desc = ""
-	picture = "gfx/leaders/LUX/William3.dds"
+	picture = "gfx/leaders/HOL/William3.dds"
 	expire = "1890.11.23"
 	ideology = imperial
 }

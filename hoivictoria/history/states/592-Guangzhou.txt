@@ -11,6 +11,7 @@ state={
 
 	history={
 		owner = CHI
+		controller = ENG
 		add_core_of = CHI
 		
 		buildings = {

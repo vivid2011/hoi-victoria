@@ -16,7 +16,6 @@ country_event = {
     trigger = {
         tag = SPR
         date > 1860.1.1
-		date < 1860.1.10
     }
 
     mean_time_to_happen = {
@@ -24,17 +23,32 @@ country_event = {
     }
 
     option = {
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
         name = sprmor.1.a
     }
 	
 	option = {
-        name = sprmor.2.a
+		ai_chance = {
+			factor = 15
+		}
+        name = sprmor.1.b
 		MOR = { country_event = {id = sprmor.2}}
+		add_political_power = -100
     }
 	
 	option = {
-        name = sprmor.3.a
+		ai_chance = {
+			factor = 10
+		}
+        name = sprmor.1.c
 		MOR = { country_event = {id = sprmor.3}}
+		add_political_power = -200
     }
 }
 
@@ -49,12 +63,19 @@ country_event = {
 	is_triggered_only = yes
 
     option = {
+		ai_chance = {
+			factor = 75
+		}
         name = sprmor.2.a
 		SPR = { white_peace = MOR }
     }
 	
 	option = {
-        name = sprmor.2.a
+		ai_chance = {
+			factor = 25
+		}
+        name = sprmor.2.b
+		add_political_power = 100
     }
 	
 }
@@ -70,14 +91,21 @@ country_event = {
 	is_triggered_only = yes
 
     option = {
+		ai_chance = {
+			factor = 95
+		}
         name = sprmor.3.a
-		290 = { owner = MOR }
-		699 = { remove_claim_by = SPR }
 		SPR = { white_peace = MOR }
+		MOR = { transfer_state = 290 }
+		699 = { remove_claim_by = SPR }
     }
 	
 	option = {
-        name = sprmor.3.a
+		ai_chance = {
+			factor = 5
+		}
+        name = sprmor.3.b
+		add_political_power = 200
     }
 	
 }
