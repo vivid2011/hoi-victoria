@@ -295,7 +295,7 @@ country_event = {
 	id = csa.9
 	title = csa.9.t
 	desc = csa.9.d
-	picture = GFX_report_event_usa_election_generic
+	picture = GFX_report_event_chinese_soldiers_running
 
 	fire_only_once = yes
 	
@@ -311,10 +311,7 @@ country_event = {
 	
 	option = {
 		name = csa.9.a
-		declare_war_on = { 
-			target = USA
-			type = civil_war
-		}
+		USA = {country_event = {id = csa.28}}
 	}
 }
 
@@ -745,6 +742,25 @@ country_event = {
 		add_political_power = 50
 		373 = {
 			add_core_of = CSA
+		}
+	}
+}
+
+#Ft Sumter (USA)
+country_event = {
+	id = csa.28
+	title = csa.28.t
+	desc = csa.28.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = csa.28.a
+		declare_war_on = { 
+			target = CSA
+			type = annex_everything
 		}
 	}
 }

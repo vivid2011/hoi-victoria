@@ -125,7 +125,7 @@ country_event = {
 	id = chi.4
 	title = chi.4.t
 	desc = chi.4.d
-	picture = GFX_news_event_kiev_ruins
+	picture = GFX_report_event_chinese_soldiers_running
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -165,7 +165,7 @@ country_event = {
 	id = chi.5
 	title = chi.5.t
 	desc = chi.5.d
-	picture = GFX_news_event_kiev_ruins
+	picture = GFX_report_event_chinese_soldiers_running
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -181,7 +181,7 @@ country_event = {
 	id = chi.6
 	title = chi.6.t
 	desc = chi.6.d
-	picture = GFX_news_event_kiev_ruins
+	picture = GFX_report_event_chinese_soldiers_running
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -200,10 +200,10 @@ country_event = {
 	id = chi.7
 	title = chi.7.t
 	desc = chi.7.d
-	picture = GFX_news_event_kiev_ruins
+	picture = GFX_report_event_chinese_soldiers_running
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	fire_only_once = no
 	
 	option = {
 		name = chi.7.a
@@ -217,7 +217,7 @@ country_event = {
 	id = chi.9
 	title = chi.9.t
 	desc = chi.9.d
-	picture = GFX_news_event_kiev_ruins
+	picture = GFX_report_event_chinese_soldiers_running
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -324,6 +324,7 @@ country_event = {
 	
 	option = {
 		name = chi.12.a
+		dismantle_faction = yes
 		326 = {remove_core_of = CHI}
 		ENG = {add_ideas = FreeTradeQing}
 	}
