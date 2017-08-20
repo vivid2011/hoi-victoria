@@ -258,24 +258,31 @@ country_event = {
 		name = csa.8.a
 		367 = {
 			add_core_of = CSA
+			remove_core_of = ALA
 		}
 		375 = {
 			add_core_of = CSA
+			remove_core_of = TEX
 		}
 		371 = {
 			add_core_of = CSA
+			remove_core_of = LOU
 		}
 		365 = {
 			add_core_of = CSA
+			remove_core_of = GRG
 		}
 		366 = {
 			add_core_of = CSA
+			remove_core_of = FLO
 		}
 		370 = {
 			add_core_of = CSA
+			remove_core_of = MIS
 		}
 		364 = {
 			add_core_of = CSA
+			remove_core_of = SSC
 		}
 		CSA = {
 			annex_country = { target = SSC transfer_troops = yes }

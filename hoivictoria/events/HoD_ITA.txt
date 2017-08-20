@@ -1,0 +1,197 @@
+###########################
+# Hearts of Darkness SDP Events
+###########################
+
+add_namespace = ita
+
+#Treaty of Turin (SDP)
+country_event = {
+	id = ita.1
+	title = ita.1.t
+	desc = ita.1.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SDP
+		date > 1860.3.1
+		date < 1860.3.30
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = ita.1.a
+		add_political_power = 50
+		FRA = {
+			transfer_state = 735
+			country_event = {id=ita.2}
+		}
+		735 = {remove_core = SDP}
+	}
+}
+
+#Treaty of Turin (FRA)
+country_event = {
+	id = ita.2
+	title = ita.2.t
+	desc = ita.2.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ita.2.a
+		add_political_power = 100
+	}
+}
+
+#Central Italian Plebicites
+country_event = {
+	id = ita.3
+	title = ita.3.t
+	desc = ita.3.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	trigger = {
+		tag = SDP
+		date > 1860.3.15
+		date < 1860.3.30
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = ita.3.a
+		add_political_power = 50
+		161 = {add_core_of = SDP}
+		162 = {add_core_of = SDP}
+		805 = {add_core_of = SDP}
+	}
+}
+
+#Expedition of the Thousand
+
+#Taking Sicily
+country_event = {
+	id = ita.4
+	title = ita.4.t
+	desc = ita.4.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	trigger = {
+		tag = SDP
+		date > 1860.3.1
+		date < 1860.3.20
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = ita.4.a
+		add_political_power = -50
+		SDP = {
+			declare_war_on = { 
+				target = KTS
+				type = annex_everything
+			}
+			set_state_controller = 115
+			load_OOB = SDP_Mille
+		}
+	}
+}
+
+#Local Reinforcements
+country_event = {
+	id = ita.5
+	title = ita.5.t
+	desc = ita.5.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	trigger = {
+		tag = SDP
+		date > 1860.3.20
+		date < 1860.4.1
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = ita.5.a
+		SDP = {
+			load_OOB = SDP_Mille2
+		}
+	}
+}
+
+#Papal States
+country_event = {
+	id = ita.6
+	title = ita.6.t
+	desc = ita.6.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	trigger = {
+		tag = SDP
+		date > 1860.9.1
+		date < 1860.9.14
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = ita.6.a
+		SDP = {
+			add_political_power = -50
+			declare_war_on = {
+				target = PAP
+				type = take_claimed_state
+			}
+		}
+	}
+}
+
+#Italian Unification
+country_event = {
+	id = ita.7
+	title = ita.7.t
+	desc = ita.7.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	trigger = {
+		tag = SDP
+		date > 1860.1.1
+		date < 1860.1.14
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = ita.7.a
+		157 = {add_claim_by = SDP}
+		2 = {add_claim_by = SDP}
+		117 = {add_claim_by = SDP}
+		156 = {add_claim_by = SDP}
+		115 = {add_claim_by = SDP}
+		160 = {add_claim_by = SDP}
+	}
+}

@@ -34,5 +34,48 @@ division_template = {
 
 ###### OOB ######
 units = {
+	division= {			
+		name = "Royal Infantry"		
+		location = 4159
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 
+	}	
+	
+	division= {			
+		name = "Royal Infantry"		
+		location = 12066
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}	
+	
+	division= {			
+		name = "Royal Infantry"		
+		location = 11837
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}	
+	
+	division= {			
+		name = "Royal Infantry"		
+		location = 819
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}	
+	
+	division= {			
+		name = "Royal Infantry"		
+		location = 819
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}	
 }

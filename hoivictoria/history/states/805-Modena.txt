@@ -1,0 +1,23 @@
+
+state={
+	id=805
+	name="STATE_805"
+	manpower = 1102401
+	
+	state_category = city
+	
+	resources={
+		aluminium=8
+	}
+
+	history={
+		owner = SDP
+		buildings = {
+			infrastructure = 4
+		}
+	}
+
+	provinces={
+		3976 9752 6790 3773 
+	}
+}

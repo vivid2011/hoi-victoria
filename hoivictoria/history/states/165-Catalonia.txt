@@ -12,12 +12,11 @@ state={
 			9764 15
 		}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 5
 			arms_factory = 1
 			industrial_complex = 1
-			air_base = 2
 			9764 = {
-				naval_base = 4
+				naval_base = 2
 			}
 		}
 		add_core_of = SPR

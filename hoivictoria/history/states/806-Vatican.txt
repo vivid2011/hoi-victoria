@@ -1,0 +1,21 @@
+state= {
+	id=806
+	name="STATE_806" # Latium
+	manpower = 100
+	
+	state_category = city
+
+	history=
+	{
+		owner = PAP
+		victory_points = { 11882 1 }
+		buildings = {
+			infrastructure = 10
+		}
+		add_core_of = PAP
+	}
+
+	provinces= {
+		11882
+ 	}
+}

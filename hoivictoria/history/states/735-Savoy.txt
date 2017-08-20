@@ -5,8 +5,9 @@ state={
 	state_category = town
 
 	history={
-		owner = FRA
+		owner = SDP
 		add_core_of = FRA
+		add_core_of = SDP
 		victory_points = {
 			778 1 
 		}
@@ -22,7 +23,7 @@ state={
 	}
 
 	provinces={
-		764 778 3764 3959 3961 6609 6975 9603 9736 9745 9909 11573 
+		778 3959 6609 9603 9745 9909 11573 
 	}
 	manpower=807500
 	buildings_max_level_factor=1.000

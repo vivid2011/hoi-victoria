@@ -1,0 +1,20 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Militia Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+
+###### OOB ######
+units = {
+	division= {			
+		name = "Il Mille di Garibaldi"		
+		location = 10074
+		division_template = "Militia Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+
+	}	
+}

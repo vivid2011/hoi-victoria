@@ -2,12 +2,12 @@
 state={
 	id=161
 	name="STATE_161"
-	manpower = 2202401
+	manpower = 1102401
 	
-	state_category = large_city
+	state_category = city
 	
 	resources={
-		aluminium=16
+		aluminium=8
 	}
 
 	history={
@@ -22,10 +22,9 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = SDP
 	}
 
 	provinces={
-		782 3773 3976 6606 6790 6793 6985 9752 9924 
+		782 6606 6793 6985 9924 
 	}
 }

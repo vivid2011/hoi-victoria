@@ -15,10 +15,10 @@ state={
 	history={
 		owner = SDP
 		victory_points = {
-			6788 10 
+			6788 5 
 		}
 		victory_points = {
-			6780 5 
+			6780 10 
 		}
 		buildings = {
 			infrastructure = 4
