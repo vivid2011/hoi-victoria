@@ -8,7 +8,7 @@ state=
 	
 	history=
 	{
-		owner = SPR
+		owner = PHI
 		buildings = {
 			infrastructure = 2
 			12118 = {

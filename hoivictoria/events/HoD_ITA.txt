@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # Hearts of Darkness SDP Events
 ###########################
 
@@ -30,7 +30,7 @@ country_event = {
 			transfer_state = 735
 			country_event = {id=ita.2}
 		}
-		735 = {remove_core = SDP}
+		735 = {remove_core_of = SDP}
 	}
 }
 

@@ -10,12 +10,14 @@ state={
 	}
 
 	history={
+		owner = JBS
 		buildings = {
 			infrastructure = 0
 		}
 		victory_points = {
 			12727 5
 		}
+		add_core_of = JBS
 	}
 
 	provinces={

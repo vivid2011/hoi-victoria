@@ -6,7 +6,7 @@ state=
 	manpower=55153
 	history=
 	{
-		owner = SPR
+		owner = PHI
 		buildings = {
 			infrastructure = 3
 			12140 = {

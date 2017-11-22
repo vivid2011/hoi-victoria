@@ -17,6 +17,20 @@ declare_war_on = {
 	type = take_claimed_state
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = PHI
+		autonomous_state = autonomy_colony
+	}
+	
+	else = {
+		puppet = PHI
+	}
+}
+
 set_politics = {
 
 	parties = {

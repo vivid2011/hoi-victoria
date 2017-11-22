@@ -45,12 +45,17 @@ if = {
 		target = NVS
 		autonomous_state = autonomy_colony
 	}
+	set_autonomy = {
+		target = TRU
+		autonomous_state = autonomy_dominion
+	}
 	else = {
 		puppet = RAJ
 		puppet = MAL
 		puppet = CAN
 		puppet = NBW
 		puppet = NVS
+		puppet = TRU
 	}
 }
 

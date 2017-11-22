@@ -2511,3 +2511,7 @@
  FreeTradeQing_desc:0 "We will use victory in the Opium Wars to our advantage and use the new market in the East for our economic gain."
  ForeignInfluence:0 "Foreign Influence on China"
  ForeignInfluence_desc:0 "Following the Opium Wars, foreign powers have carved up China, strangling it of its economic potential."
+ 
+ #ITALIAN STATES
+ naples_morale:0 "Low Public Morale"
+ naples_morale_desc:0 "Many people in the public and in the army, including officers, support the unification of Italy. If we are invaded, these men may not bring a full fighting effort."

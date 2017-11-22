@@ -1,6 +1,8 @@
 ﻿capital = 327
 
-oob = "PHI_1936"
+set_cosmetic_tag = PHI_SEI
+
+oob = "PHI_1860"
 
 # Starting tech
 set_technology = {
@@ -13,23 +15,27 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 82
+			popularity = 30
 		}
 
 		fascism = {
-			popularity = 9
+			popularity = 1
 		}
 		
 		communism = {
-			popularity = 9
+			popularity = 10
 			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 59
 		}
 	}
 	
-	ruling_party = democratic
-	last_election = "1935.9.15"
+	ruling_party = neutrality
+	last_election = "None"
 	election_frequency = 72
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -54,27 +60,13 @@ create_country_leader = {
 	}
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 82
-			}
-
-			fascism = {
-				popularity = 9
-			}
-			
-			communism = {
-				popularity = 9
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = democratic
-		last_election = "1935.9.15"
-		election_frequency = 72
-		elections_allowed = yes
+create_country_leader = {
+	name = "Governor-General Fernándo Norzagaray y Escudero"
+	desc = ""
+	picture = "gfx/leaders/PHI/Escudero.dds"
+	expire = "1860.1.12"
+	ideology = despotism
+	traits = {
+		#
 	}
 }

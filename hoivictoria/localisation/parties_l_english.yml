@@ -398,7 +398,7 @@
  PHI_democratic_party_long:0 "Partido Nacionalista"
  PHI_communism_party:0 "PKP"
  PHI_communism_party_long:0 "Partido Komunista ng Pilipinas"
- SAU_neutrality_party:0 "Tribal Council"
+ SAU_neutrality_party:0 "House of Saud"
  SAU_monarchist_party:0 "House of Saud"
  YEM_neutrality_party:0 "House of Rassid"
  OMA_monarchist_party:0 "Al Said Dynasty"
@@ -676,3 +676,7 @@
  ZUL_monarchist_party:0 "Zulu Dynasty"
  
  SWA_monarchist_party:0 "House of Dlamini"
+ 
+ TRU_neutrality_party:0 "Tribal Confederation"
+ 
+ JBS_monarchist_party:0 "House of Rashid"
